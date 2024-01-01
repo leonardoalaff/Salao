@@ -35,9 +35,10 @@ nav {
     height: 3px;
     background-color: white;
     position: absolute;
-    box-shadow: 0 10px 0 white;
+    box-shadow: 0 -10px 0 white;
     right: 40px;
     transition: 0.5s;
+    transform: translateY(10px);
 }
 
 .icone-menu::after {
@@ -53,11 +54,11 @@ nav {
 
 .icone-menu.active::before {
     box-shadow: none;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateY(20px);
 }
 
 .icone-menu.active::after {
-    transform: rotate(45deg);
+    transform: rotate(45deg) translatex(20px);
 }
 
 .ul {
