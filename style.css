@@ -11,6 +11,7 @@
 header {
    position: fixed;
    width: 100%;
+   background-color: hotpink;
 }
 
 nav {
@@ -19,13 +20,22 @@ nav {
     margin: 40px;
 }
 
+.icone-menu {
+    padding: 20px;
+    padding-top: 0;
+}
+.icone-menu.active {
+    padding: 20px;
+    padding-top: 0;
+}
+
 .icone-menu::before {
     content: '';
     width: 40px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     position: absolute;
-    box-shadow: 0 10px 0 black;
+    box-shadow: 0 10px 0 white;
     right: 40px;
     transition: 0.5s;
 }
@@ -36,7 +46,7 @@ nav {
     height: 3px;
     position: absolute;
     transform: translateY(20px);
-    background-color: black;
+    background-color: white;
     right: 40px;
     transition: 0.5s;
 }
@@ -57,7 +67,7 @@ nav {
     left: 0;
     top: 0;
     list-style: none;
-    background-color: rgb(100, 85, 85);
+    background-color: rgb(209, 110, 196);
     color: rgb(255, 255, 255);
     transform: translateX(-100%);
     transition: 0.5s;
@@ -78,16 +88,16 @@ nav {
 .contato{border-radius: 50px 0 0 50px;}
 
 .home:hover {
-    background-color: rgb(231, 134, 6);
+    background-color: rgb(231, 6, 212);
     border-radius: 50px 0 0 50px;
     transition: 0.5s;
-    color: black;
+    color: white;
     transform: translateX(30px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
 }
 .contato:hover {
-    background-color: rgb(231, 134, 6);
-    color: black;
+    background-color: rgb(231, 6, 212);
+    color: white;
     border-radius: 50px 0 0 50px;
     transition: 0.5s;
     transform: translateX(30px);
