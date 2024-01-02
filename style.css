@@ -8,10 +8,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {display: none;}
+
 header {
+    top: 0;
    position: fixed;
    width: 100%;
-   background-color: hotpink;
+   background-color: #005fc7;
+   height: 100px;
 }
 
 nav {
@@ -20,6 +24,14 @@ nav {
     margin: 40px;
 }
 
+.logo {
+    position: relative;
+    top: -35px;
+    left: -50px;
+    user-select: none;
+}
+
+/*********** MENU **********/
 .icone-menu {
     padding: 20px;
     padding-top: 0;
@@ -62,14 +74,15 @@ nav {
 }
 
 .ul {
+    user-select: none;
     width: 60%;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     list-style: none;
-    background-color: rgb(209, 110, 196);
-    color: rgb(255, 255, 255);
+    background-color: /*rgb(43, 38, 38)*/ #007cf7;
+    color: white;
     transform: translateX(-100%);
     transition: 0.5s;
 }
@@ -85,22 +98,60 @@ nav {
     font-size: 20px;
 }
 
-.home{border-radius: 50px 0 0 50px;}
-.contato{border-radius: 50px 0 0 50px;}
+.home, .contato, .servicos, .endereco{border-radius: 50px 0 0 50px;}
 
-.home:hover {
-    background-color: rgb(231, 6, 212);
-    border-radius: 50px 0 0 50px;
+.home:hover, .contato:hover, .servicos:hover, .endereco:hover{
     transition: 0.5s;
-    color: white;
     transform: translateX(30px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
 }
-.contato:hover {
-    background-color: rgb(231, 6, 212);
+.home:hover {background: #005fc7; color: white;}
+.contato:hover {background: green; color: white;}
+.servicos:hover {background: rgb(231, 6, 212); color: white;}
+.endereco:hover {background: black; color: white;}
+
+
+/*********** SESSÃO 1 **********/
+#sessao1 {
+    background: url('imagens/backgrounds/bg-sessao1.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+.rolagem {
+    display: flex;
+    position: relative;
+    top: 100px;
+    width:100%;
+    height: 27rem;
+    margin: auto;
+    overflow: auto;
+    z-index: -1;
+}
+
+.info-card {
+    min-width: 15rem;
+    max-height: 24rem;
+    background: #005fc7;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.61);
+}
+.h2-info {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #007fc7;
     color: white;
-    border-radius: 50px 0 0 50px;
-    transition: 0.5s;
-    transform: translateX(30px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    font-size: 20px;
+    border-radius: 20px;
+}
+.p-info {
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
