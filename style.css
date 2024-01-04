@@ -8,13 +8,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --verde-escuro: #007849;
+    --verder-lima: #8CC63F;
+    --laranja: #FFA500;
+    --amarelo-palido: #FFFACD;
+    --marrom-terra: #8B4513;
+}
+
 ::-webkit-scrollbar {display: none;}
 
 header {
     top: 0;
    position: absolute;
    width: 100%;
-   background: linear-gradient(180deg, rgb(250, 8, 141) 1%, #bd17f0 60%);
+   background: linear-gradient(to top, #007849, #8CC63F);
    height: 250px;
    z-index: -1;
 }
@@ -22,40 +30,39 @@ header {
 .rolagem-header {
     display: flex;
     position: relative;
-    top: 120px;
+    top: 110px;
     width: 100%;
-    height: 60px;
+    height: 70px;
     z-index: -1;
     overflow: auto;
 }
 .img-header {
     margin: 0 17px;
-    height: 50px;
-    min-width: 50px;
-    border: 3px solid white;
+    height: 70px;
+    min-width: 70px;
+    border: 3px solid orangered;
     border-radius: 50%;
-    background: purple;
+    background: var(--verde-escuro);
 }
+.p-header {
+    position: relative;
+    top: 47px;
+    width: 90px;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: orangered;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 4px;
+}
+
 .ih1 {background: url('imagens/icones/img-header1.svg');}
-.ih1.active {border: 5px solid rgb(5, 250, 250);}
-
 .ih2 {background: url('imagens/icones/img-header2.svg');}
-.ih2.active {border: 5px solid rgb(5, 250, 250);}
-
 .ih3 {background: url('imagens/icones/img-header3.svg');}
-.ih4 {}
+.ih4 {background-image: url('imagens/icones/img-header4.svg');}
 .ih5 {}
 .ih6 {}
-
-.preço {
-    font-size: 18px;
-    background: rgb(6, 227, 235);
-    padding: 3px;
-    border-radius: 10px;
-    color: purple;
-}
-
-.horario.manicure, .horario.pedicure {height: 250px; background: linear-gradient(180deg, rgb(250, 8, 141) 1%, #bd17f0 60%); color: white;}
 
 .horario {
     position: relative;
@@ -64,91 +71,45 @@ header {
     width: 80%;
     height: 100px;
     border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+    background: orangered;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
     z-index: -1;
     transition: 0.5s;
 }
 
-.h2-horario.manicure, .h2-horario.pedicure {display: none;}
 .h2-horario {
     text-align: center;
     padding: 10px;
     padding-bottom: 0;
-    color: rgb(77, 80, 80);
-    letter-spacing: 5px;
+    color: white;
+    letter-spacing: 3px;
     transition: 0.5s;
 }
 
-.h2-manicure.active {display: block;}
-.h2-manicure.off {display: none;}
-.h2-manicure {
-    text-align: center;
-    padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 0;
-    color: white;
-    letter-spacing: 5px;
-    display: none;
-}
-.h2-pedicure.active {display: block;}
-.h2-pedicure.off {display: none;}
-.h2-pedicure {
-    text-align: center;
-    padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 0;
-    color: white;
-    letter-spacing: 5px;
-    display: none;
-}
-
-.p-horario.manicure, .p-horario.pedicure {display: none;}
 .p-horario {
     text-align: center;
-    color: rgb(77, 80, 80);
+    color: white;
     letter-spacing: 5px;
 }
 
-.p2-horario.manicure, .p2-horario.pedicure {display: none;}
 .p2-horario {
     margin: 10px;
     text-align: center;
-    color: rgb(77, 80, 80);
-    letter-spacing: 5px;
-    font-weight: bold;
-}
-.p2-manicure.active {display: block;}
-.p2-manicure.off {display: none;}
-.p2-manicure {
-    margin: 10px;
-    text-align: center;
     color: white;
     letter-spacing: 5px;
     font-weight: bold;
-    display: none;
-}
-.p2-pedicure.active {display: block;}
-.p2-pedicure.off {display: none;}
-.p2-pedicure {
-    margin: 10px;
-    text-align: center;
-    color: white;
-    letter-spacing: 5px;
-    font-weight: bold;
-    display: none;
 }
 
 nav {
-    background: linear-gradient(to bottom, rgb(250, 8, 141), transparent);
     width: 100%;
+    height: 80px;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.4s;
 }
-nav.active {background: rgb(250, 8, 141);}
+nav.active {background: var(--verde-escuro)}
 
 .logo {
     position: relative;
@@ -170,9 +131,9 @@ nav.active {background: rgb(250, 8, 141);}
     content: '';
     width: 40px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     position: absolute;
-    box-shadow: 0 -10px 0 white;
+    box-shadow: 0 -10px 0 black;
     right: 40px;
     transition: 0.5s;
     transform: translateY(10px);
@@ -184,7 +145,7 @@ nav.active {background: rgb(250, 8, 141);}
     height: 3px;
     position: absolute;
     transform: translateY(20px);
-    background-color: white;
+    background-color: black;
     right: 40px;
     transition: 0.5s;
 }
@@ -206,8 +167,8 @@ nav.active {background: rgb(250, 8, 141);}
     left: 0;
     top: 0;
     list-style: none;
-    background: linear-gradient(180deg, rgb(250, 8, 141) 1%, #bd17f0 60%);
-    color: white;
+    background: linear-gradient(to top, #007849, #8CC63F);
+    color: black;
     transform: translateX(-100%);
     transition: 0.5s;
 }
@@ -230,10 +191,13 @@ nav.active {background: rgb(250, 8, 141);}
     transform: translateX(30px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
 }
-.home:hover {background: #005fc7; color: white;}
-.contato:hover {background: green; color: white;}
-.servicos:hover {background: rgb(231, 6, 6); color: white;}
-.endereco:hover {background: black; color: white;}
+.home:hover, .contato:hover, .servicos:hover, .endereco:hover{
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: orangered;
+    font-weight: bold;
+    border: 1px solid white;
+}
 
 
 /*********** SESSÃO 1 **********/
@@ -250,18 +214,34 @@ nav.active {background: rgb(250, 8, 141);}
 .rolagem {
     display: flex;
     position: relative;
-    top: 150px;
+    top: 100px;
     width:100%;
-    height: 27rem;
+    height: 12rem;
     margin: auto;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     z-index: -1;
+}
+.promo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+.p-promo {
+    background: black;
+    color: white;
+    width: 220px;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .info-card {
-    min-width: 15rem;
-    max-height: 20rem;
-    background: linear-gradient(180deg, rgb(250, 8, 141) 1%, #bd17f0 60%);
+    min-width: 15rem; /* equivale a 250px, aprox.*/
+    max-height: 10rem; /* equivale a 170px, aprox.*/
+    background: linear-gradient(to top, #007849, #8CC63F);
     margin: 10px;
     border-radius: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.61);
@@ -270,12 +250,23 @@ nav.active {background: rgb(250, 8, 141);}
     margin: 20px;
     padding: 20px;
     text-align: center;
-    background: white;
-    color: rgb(77, 80, 80);
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: white;
+    border: 1px solid white;
     font-size: 20px;
     border-radius: 20px;
 }
 .p-info {
     text-align: center;
-    padding: 20px;color: white;
+    padding: 20px;
+    background: orangered;
+    border-radius: 0 0 20px 20px;
+    color: white;
 }
+
+.info1 {background: url('imagens/backgrounds/bgs-cards-s1/abacaxi.svg');}
+
+.info2 {background: url('imagens/backgrounds/bgs-cards-s1/morango.svg');}
+
+.info3 {background: url('imagens/backgrounds/bgs-cards-s1/uva.svg');}
