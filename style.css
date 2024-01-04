@@ -18,17 +18,13 @@
 
 ::-webkit-scrollbar {display: none;}
 
-body{overflow-x: hidden;}
-main{overflow-x: hidden;}
-section{overflow-x: hidden;}
-
 header {
     top: 0;
    position: absolute;
    width: 100%;
    background: linear-gradient(to top, transparent, orangered);
    height: 250px;
-   z-index: 0;
+   z-index: 1;
 }
 
 .rolagem-header {
@@ -126,6 +122,10 @@ nav {
 nav.active {background: orangered}
 
 .logo {
+    padding: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
     position: relative;
     user-select: none;
 }
@@ -178,16 +178,17 @@ nav.active {background: orangered}
     width: 60%;
     height: 100vh;
     position: fixed;
-    left: 0;
+    left: -100%;
     top: 0;
     list-style: none;
     background: orangered;
     color: white;
-    transform: translateX(-100%);
     transition: 0.5s;
+
+    z-index: 2;
 }
 .ul.active {
-    transform: translateX(0);
+    left: 0;
 }
 
 .ul li {
@@ -212,13 +213,10 @@ nav.active {background: orangered}
 
 /*********** SESSÃO 1 **********/
 #sessao1 {
-    background: white;
-    background-size: contain;
     position: relative;
     width: 100%;
-    height:380px;
+    height:400px;
     margin-top: 250px;
-    z-index: -1;
 }
 
 .rolagem {
@@ -229,8 +227,7 @@ nav.active {background: orangered}
     height: 12rem;
     margin: auto;
     overflow-x: auto;
-    overflow-y: hidden;
-    z-index: -1;
+
 }
 .promo {
     display: flex;
@@ -252,7 +249,6 @@ nav.active {background: orangered}
 .info-card {
     min-width: 15rem; /* equivale a 250px, aprox.*/
     max-height: 10rem; /* equivale a 170px, aprox.*/
-    background: linear-gradient(to top, #007849, #8CC63F);
     margin: 10px;
     border-radius: 20px;
     box-shadow: 8px 8px 17px rgb(0, 0, 0);
@@ -286,8 +282,8 @@ nav.active {background: orangered}
     position: fixed;
     right: -60px;
     transform: scale(0.27);
-    z-index: 100;
     display: none;
+    z-index: 2;
 }
 .icone-wpp.active {display: block;}
 
@@ -298,7 +294,6 @@ nav.active {background: orangered}
     position: relative;
     width: 100%;
     height:100vh;
-    z-index: -2;
-    transition: background 0.5s linear;
+    transition: 0.5s linear;
 }
-#sessao2.active{background-color: purple;}
+#sessao2.active{background-color: orangered;}
