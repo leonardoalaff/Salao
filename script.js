@@ -15,6 +15,9 @@ let p2Pedicure = document.querySelector('.p2-pedicure')
 let ih1 = document.querySelector('.ih1')
 let ih2 = document.querySelector('.ih2')
 
+let iconeWPP = document.querySelector('.icone-wpp')
+let sessao2 = document.querySelector('#sessao2')
+
 
 iconeMenu.addEventListener('click', () => {
     iconeMenu.classList.toggle('active')
@@ -23,4 +26,6 @@ iconeMenu.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
     nav.classList.toggle('active', scrollY > 100)
+    iconeWPP.classList.toggle('active', scrollY > 10)
+    sessao2.classList.toggle('active', scrollY > 180)
 })

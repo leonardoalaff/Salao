@@ -18,13 +18,17 @@
 
 ::-webkit-scrollbar {display: none;}
 
+body{overflow-x: hidden;}
+main{overflow-x: hidden;}
+section{overflow-x: hidden;}
+
 header {
     top: 0;
    position: absolute;
    width: 100%;
-   background: linear-gradient(to top, #007849, #8CC63F);
+   background: linear-gradient(to top, transparent, orangered);
    height: 250px;
-   z-index: -1;
+   z-index: 0;
 }
 
 .rolagem-header {
@@ -35,6 +39,7 @@ header {
     height: 70px;
     z-index: -1;
     overflow: auto;
+    overflow-y: hidden;
 }
 .img-header {
     margin: 0 17px;
@@ -61,9 +66,18 @@ header {
 .ih2 {background: url('imagens/icones/img-header2.svg');}
 .ih3 {background: url('imagens/icones/img-header3.svg');}
 .ih4 {background-image: url('imagens/icones/img-header4.svg');}
-.ih5 {}
-.ih6 {}
+.ih5 {background-image: url('imagens/icones/img-header5.svg');}
+.ih6 {background-image: url('imagens/icones/img-header6.svg');}
 
+
+.linha {
+    background-color: orangered;
+    width: 100%;
+    height: 3px;
+    position: relative;
+    top: 190px;
+    z-index: -1;
+}
 .horario {
     position: relative;
     top: 140px;
@@ -109,7 +123,7 @@ nav {
     align-items: center;
     transition: 0.4s;
 }
-nav.active {background: var(--verde-escuro)}
+nav.active {background: orangered}
 
 .logo {
     position: relative;
@@ -131,9 +145,9 @@ nav.active {background: var(--verde-escuro)}
     content: '';
     width: 40px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     position: absolute;
-    box-shadow: 0 -10px 0 black;
+    box-shadow: 0 -10px 0 white;
     right: 40px;
     transition: 0.5s;
     transform: translateY(10px);
@@ -145,7 +159,7 @@ nav.active {background: var(--verde-escuro)}
     height: 3px;
     position: absolute;
     transform: translateY(20px);
-    background-color: black;
+    background-color: white;
     right: 40px;
     transition: 0.5s;
 }
@@ -167,8 +181,8 @@ nav.active {background: var(--verde-escuro)}
     left: 0;
     top: 0;
     list-style: none;
-    background: linear-gradient(to top, #007849, #8CC63F);
-    color: black;
+    background: orangered;
+    color: white;
     transform: translateX(-100%);
     transition: 0.5s;
 }
@@ -190,25 +204,21 @@ nav.active {background: var(--verde-escuro)}
     transition: 0.5s;
     transform: translateX(30px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
-}
-.home:hover, .contato:hover, .servicos:hover, .endereco:hover{
-    background: transparent;
-    backdrop-filter: blur(5px);
-    color: orangered;
-    font-weight: bold;
-    border: 1px solid white;
+    background: white;
+    color: black;
+    font-weight: bolder;
 }
 
 
 /*********** SESSÃO 1 **********/
 #sessao1 {
-    background: url('imagens/backgrounds/bg-sessao1.svg') no-repeat;
+    background: white;
     background-size: contain;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100vh;
+    height:380px;
     margin-top: 250px;
-    z-index: -2;
+    z-index: -1;
 }
 
 .rolagem {
@@ -231,9 +241,10 @@ nav.active {background: var(--verde-escuro)}
     padding: 10px;
 }
 .p-promo {
-    background: black;
-    color: white;
-    width: 220px;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 10px;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 10px;
 }
@@ -244,7 +255,7 @@ nav.active {background: var(--verde-escuro)}
     background: linear-gradient(to top, #007849, #8CC63F);
     margin: 10px;
     border-radius: 20px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.61);
+    box-shadow: 8px 8px 17px rgb(0, 0, 0);
 }
 .h2-info {
     margin: 20px;
@@ -270,3 +281,24 @@ nav.active {background: var(--verde-escuro)}
 .info2 {background: url('imagens/backgrounds/bgs-cards-s1/morango.svg');}
 
 .info3 {background: url('imagens/backgrounds/bgs-cards-s1/uva.svg');}
+
+.icone-wpp {
+    position: fixed;
+    right: -60px;
+    transform: scale(0.27);
+    z-index: 100;
+    display: none;
+}
+.icone-wpp.active {display: block;}
+
+
+
+/*********** SESSÃO 2 **********/
+#sessao2 {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    z-index: -2;
+    transition: background 0.5s linear;
+}
+#sessao2.active{background-color: purple;}
