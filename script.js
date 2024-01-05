@@ -17,6 +17,8 @@ let ih2 = document.querySelector('.ih2')
 
 let iconeWPP = document.querySelector('.icone-wpp')
 let sessao2 = document.querySelector('#sessao2')
+let aberto = document.querySelector('.aberto')
+let fechado = document.querySelector('.fechado')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -29,3 +31,18 @@ window.addEventListener('scroll', () => {
     iconeWPP.classList.toggle('active', scrollY > 10)
     sessao2.classList.toggle('active', scrollY > 180)
 })
+
+
+function verificarStatus() {
+    const agora = new Date();
+    const diaSemana = agora.getDay();
+    const hora = agora.getHours();
+
+    if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
+        return aberto.classList.toggle('active');
+    } else {
+        return fechado.classList.toggle('active');
+    }
+}
+
+console.log(verificarStatus());

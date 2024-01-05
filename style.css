@@ -18,6 +18,8 @@
 
 ::-webkit-scrollbar {display: none;}
 
+.sessao1, .sessao2, body, main {overflow-x: hidden;}
+
 header {
     top: 0;
    position: absolute;
@@ -71,7 +73,7 @@ header {
     width: 100%;
     height: 3px;
     position: relative;
-    top: 190px;
+    top: 200px;
     z-index: -1;
 }
 .horario {
@@ -80,7 +82,7 @@ header {
     margin: auto;
     width: 80%;
     height: 100px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     background: orangered;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
     z-index: -1;
@@ -109,6 +111,29 @@ header {
     letter-spacing: 5px;
     font-weight: bold;
 }
+.aberto {
+    text-align: center;
+    padding: 10px 0;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 7px;
+    border-radius: 0 0 20px 20px;
+    display: none;
+}
+.aberto.active {display: block;}
+
+.fechado {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 7px;
+    border-radius: 0 0 20px 20px;
+    display: none;
+}
+.fechado.active {display: block;}
 
 nav {
     width: 100%;
@@ -119,7 +144,7 @@ nav {
     align-items: center;
     transition: 0.4s;
 }
-nav.active {background: orangered}
+nav.active {background: orangered;}
 
 .logo {
     padding: 20px;
@@ -282,8 +307,8 @@ nav.active {background: orangered}
     position: fixed;
     right: -60px;
     transform: scale(0.27);
-    display: none;
     z-index: 2;
+    display: none;
 }
 .icone-wpp.active {display: block;}
 
@@ -296,4 +321,4 @@ nav.active {background: orangered}
     height:100vh;
     transition: 0.5s linear;
 }
-#sessao2.active{background-color: orangered;}
+#sessao2.active{background-color: #007fc7;}
