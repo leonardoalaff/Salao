@@ -29,7 +29,7 @@ iconeMenu.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     nav.classList.toggle('active', scrollY > 100)
     iconeWPP.classList.toggle('active', scrollY > 10)
-    sessao2.classList.toggle('active', scrollY > 180)
+    sessao2.classList.toggle('active', scrollY > 450)
 })
 
 window.addEventListener('load', () => {
