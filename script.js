@@ -17,8 +17,14 @@ let ih2 = document.querySelector('.ih2')
 
 let iconeWPP = document.querySelector('.icone-wpp')
 let sessao2 = document.querySelector('#sessao2')
+let sessao3 = document.querySelector('#sessao3')
+let sessao4 = document.querySelector('#sessao4')
+let sessao5 = document.querySelector('#sessao5')
+let sessao6 = document.querySelector('#sessao6')
+let sessao7 = document.querySelector('#sessao7')
 let aberto = document.querySelector('.aberto')
 let fechado = document.querySelector('.fechado')
+let seta = document.querySelector('.seta')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -30,6 +36,12 @@ window.addEventListener('scroll', () => {
     nav.classList.toggle('active', scrollY > 100)
     iconeWPP.classList.toggle('active', scrollY > 10)
     sessao2.classList.toggle('active', scrollY > 450)
+    sessao3.classList.toggle('active', scrollY > 1200)
+    sessao4.classList.toggle('active', scrollY > 1850)
+    sessao5.classList.toggle('active', scrollY > 2500)
+    sessao6.classList.toggle('active', scrollY > 3150)
+    sessao7.classList.toggle('active', scrollY > 3800)
+    seta.classList.toggle('active', scrollY > 450)
 })
 
 window.addEventListener('load', () => {

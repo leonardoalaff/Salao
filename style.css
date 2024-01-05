@@ -315,7 +315,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 }
 .icone-wpp.active {display: block;}
 
-
+/******************************* PRODUTOS ****************************/
 
 /*********** SESSÃO 2 **********/
 #sessao2 {
@@ -325,6 +325,23 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     transition: 0.5s linear;
 }
 #sessao2.active{background-color: var(--verde-escuro);}
+
+/************************** CONFG. GRAIS DE PRODUTOS ****************/
+.seta {
+    transform: scale(3);
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    right: 30px;
+    color: white;
+    height: 17px;
+    width: 17px;
+    border-radius: 2px;
+    z-index: 100;
+}
+.seta.active{display: flex;}
 
 #titulo-verduras {
     position: relative;
@@ -353,7 +370,9 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     background-color: black;
 }
 .bloco-verduras::before {
-    content: '';
+    content: 'Nome';
+    color: red;
+
     background-color: white;
     width: 100px;
     height: 50px;
@@ -362,12 +381,71 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     top: -35px;
     border-radius: 10px 10px 0 0 ;
 }
+
 .precos {
-    background-color: red;
+    background-color: white;
     width: 70px;
     height: 30px;
     position: relative;
     top: 36px;
     left: 35px;
-    border-radius: 10px;
+    border-radius: 5px; 
 }
+
+
+/*********** SESSÃO 3 **********/
+#sessao3 {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    transition: 0.5s linear;
+    background-color: var(--verde-escuro);
+}
+#sessao3.active{background-color: var(--laranja);}
+
+
+/*********** SESSÃO 4 **********/
+#sessao4 {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    transition: 0.5s linear;
+    background-color: var(--laranja);
+}
+#sessao4.active{background-color: var(--amarelo-palido);}
+#sessao4 #titulo-verduras {color: black;}
+
+
+/*********** SESSÃO 5 **********/
+#sessao5 {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    transition: 0.5s linear;
+    background-color: var(--amarelo-palido);
+}
+#sessao5.active{background-color: red;}
+
+
+/*********** SESSÃO 6 **********/
+#sessao6 {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    transition: 0.5s linear;
+    background-color: red;
+}
+#sessao6.active{background-color: var(--marrom-terra);}
+#sessao6 #titulo-verduras {color: white;}
+
+
+/*********** SESSÃO 7 **********/
+#sessao7 {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    transition: 0.5s linear;
+    background-color: var(--marrom-terra);
+}
+#sessao7.active{background-color: purple;}
+#sessao7 #titulo-verduras {color: white;}
