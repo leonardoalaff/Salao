@@ -35,13 +35,26 @@ iconeMenu.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     nav.classList.toggle('active', scrollY > 100)
     iconeWPP.classList.toggle('active', scrollY > 10)
-    sessao2.classList.toggle('active', scrollY > 450)
-    sessao3.classList.toggle('active', scrollY > 1200)
-    sessao4.classList.toggle('active', scrollY > 1850)
-    sessao5.classList.toggle('active', scrollY > 2500)
-    sessao6.classList.toggle('active', scrollY > 3150)
-    sessao7.classList.toggle('active', scrollY > 3800)
     seta.classList.toggle('active', scrollY > 450)
+
+    var sessao2Offset = sessao2.offsetTop;
+    var sessao3Offset = sessao2.offsetTop;
+    var sessao4Offset = sessao2.offsetTop;
+    var sessao5Offset = sessao2.offsetTop;
+    var sessao6Offset = sessao2.offsetTop;
+    var sessao7Offset = sessao2.offsetTop;
+    
+    var scrollPosition = window.scrollY;
+  
+    if (scrollPosition <= sessao2Offset) {
+      sessao2.classList.toggle('active')
+    }
+    
+    
+    else {
+      document.body.style.backgroundColor = 'white'
+    }
+  
 })
 
 window.addEventListener('load', () => {
@@ -55,3 +68,4 @@ window.addEventListener('load', () => {
         return fechado.classList.toggle('active');
     }
 })
+  
