@@ -32,8 +32,7 @@ window.addEventListener('scroll', () => {
     sessao2.classList.toggle('active', scrollY > 180)
 })
 
-
-function verificarStatus() {
+window.addEventListener('load', () => {
     const agora = new Date();
     const diaSemana = agora.getDay();
     const hora = agora.getHours();
@@ -43,6 +42,4 @@ function verificarStatus() {
     } else {
         return fechado.classList.toggle('active');
     }
-}
-
-window.addEventListener('load', verificarStatus)
+})
