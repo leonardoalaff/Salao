@@ -45,4 +45,4 @@ function verificarStatus() {
     }
 }
 
-document.write(verificarStatus());
+window.addEventListener('load', verificarStatus)

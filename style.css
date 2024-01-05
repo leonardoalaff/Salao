@@ -225,7 +225,7 @@ nav.active {background: orangered;}
 }
 
 .home, .contato, .servicos, .endereco{border-radius: 50px 0 0 50px;}
-
+ul a {text-decoration: none; color: white; transition: 0.5s;}
 .home:hover, .contato:hover, .servicos:hover, .endereco:hover{
     transition: 0.5s;
     transform: translateX(30px);
@@ -321,4 +321,51 @@ nav.active {background: orangered;}
     height:100vh;
     transition: 0.5s linear;
 }
-#sessao2.active{background-color: #007fc7;}
+#sessao2.active{background-color: var(--verde-escuro);}
+
+#titulo-verduras {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.lista-produtos {
+    background-color: #FFA500;
+    height: 520px;
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.bloco-verduras {
+    height: 150px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+.bloco-verduras::before {
+    content: '';
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    top: -35px;
+    border-radius: 10px 10px 0 0 ;
+}
+.precos {
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    position: relative;
+    top: 36px;
+    left: 35px;
+    border-radius: 10px;
+}
