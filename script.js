@@ -35,12 +35,12 @@ iconeMenu.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     nav.classList.toggle('active', scrollY > 100)
     iconeWPP.classList.toggle('active', scrollY > 10)
-    sessao2.classList.toggle('active', scrollY > 450)
+    sessao2.classList.toggle('active', scrollY > 450) 
     sessao3.classList.toggle('active', scrollY > 1200)
-    sessao4.classList.toggle('active', scrollY > 1850)
+    sessao4.classList.toggle('active', scrollY > 1950)
     sessao5.classList.toggle('active', scrollY > 2700)
-    sessao6.classList.toggle('active', scrollY > 3550)
-    sessao7.classList.toggle('active', scrollY > 4300)
+    sessao6.classList.toggle('active', scrollY > 3450)
+    sessao7.classList.toggle('active', scrollY > 4250)
     seta.classList.toggle('active', scrollY > 450)
 })
 
