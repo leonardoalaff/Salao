@@ -39,8 +39,8 @@ window.addEventListener('scroll', () => {
     sessao3.classList.toggle('active', scrollY > 1200)
     sessao4.classList.toggle('active', scrollY > 1850)
     sessao5.classList.toggle('active', scrollY > 2700)
-    sessao6.classList.toggle('active', scrollY > 3150)
-    sessao7.classList.toggle('active', scrollY > 3800)
+    sessao6.classList.toggle('active', scrollY > 3550)
+    sessao7.classList.toggle('active', scrollY > 4300)
     seta.classList.toggle('active', scrollY > 450)
 })
 
