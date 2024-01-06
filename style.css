@@ -192,6 +192,12 @@ nav {
     transition: 0.4s;
 }
 nav.active {background: orangered;}
+nav.verduras {background: var(--verde-escuro);}
+nav.legumes {background: var(--laranja);}
+nav.frutas {background: cyan;}
+nav.bebidas {background: red;}
+nav.sorvetes {background: var(--amarelo-palido);}
+nav.acai {background: purple;}
 
 .logo {
     padding: 20px;
@@ -457,8 +463,8 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     transition: 0.5s;
     background-color: var(--laranja);
 }
-#sessao4.active{background: var(--amarelo-palido) url('imagens/backgrounds/bg-frutas.svg'); background-size: contain;}
-#sessao4 #titulo-verduras {color: black;}
+#sessao4.active{background: cyan url('imagens/backgrounds/bg-frutas.svg'); background-size: contain;}
+#sessao4 #titulo-verduras {color: red;}
 
 
 /*********** SESSÃO 5 **********/
@@ -469,7 +475,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     transition: 0.5s;
     background-color: var(--amarelo-palido);
 }
-#sessao5.active{background: red url('imagens/backgrounds/bg-bebidas.svg');}
+#sessao5.active{background: red url('imagens/backgrounds/bg-bebidas.png');}
 
 
 /*********** SESSÃO 6 **********/
@@ -492,4 +498,4 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     transition: 0.5s;
     background-color: var(--amarelo-palido);
 }
-#sessao7.active{background: purple url('imagens/backgrounds/bg-acai.svg')}
+#sessao7.active{background: purple url('imagens/backgrounds/bgacai.png')}

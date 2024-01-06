@@ -37,11 +37,23 @@ iconeMenu.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     nav.classList.toggle('active', scrollY > 100)
     iconeWPP.classList.toggle('active', scrollY > 10)
+
+    nav.classList.toggle('verduras', scrollY > 449) 
     sessao2.classList.toggle('active', scrollY > 450) 
+
+    nav.classList.toggle('legumes', scrollY > 1199)
     sessao3.classList.toggle('active', scrollY > 1200)
+
+    nav.classList.toggle('frutas', scrollY > 1949)
     sessao4.classList.toggle('active', scrollY > 1950)
+
+    nav.classList.toggle('bebidas', scrollY > 2699)
     sessao5.classList.toggle('active', scrollY > 2700)
+
+    nav.classList.toggle('sorvetes', scrollY > 3449)
     sessao6.classList.toggle('active', scrollY > 3450)
+
+    nav.classList.toggle('acai', scrollY > 4249)
     sessao7.classList.toggle('active', scrollY > 4250)
     seta.classList.toggle('active', scrollY > 450)
 })
