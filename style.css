@@ -18,7 +18,7 @@
 }
 
 ::-webkit-scrollbar {display: none;}
-html {scroll-behavior: smooth;}
+html {scroll-behavior: smooth; scroll-padding-top: 200px;}
 
 .sessao1, .sessao2, body, main {overflow-x: hidden;}
 

@@ -1,18 +1,20 @@
 let iconeMenu = document.querySelector('.icone-menu')
 let ul = document.querySelector('.ul')
 let nav = document.querySelector('.nav')
+
 let horario = document.querySelector('.horario')
-
 let h2Horario = document.querySelector('.h2-horario')
-
 let pHorario = document.querySelector('.p-horario')
 let p2Horario = document.querySelector('.p2-horario')
 
-let iconeWPP = document.querySelector('.icone-wpp')
 let sessao2 = document.querySelector('#sessao2')
+
 let aberto = document.querySelector('.aberto')
 let fechado = document.querySelector('.fechado')
+
+let iconeWPP = document.querySelector('.icone-wpp')
 let seta = document.querySelector('.seta')
+
 let sair = document.querySelector('#sair')
 let anuncio = document.querySelector('#anuncio')
 
@@ -39,7 +41,7 @@ window.addEventListener('load', () => {
 
     setTimeout(() => {
         anuncio.classList.toggle('active')
-    }, 3000); // 1000 milissegundos = 1 segundo
+    }, 1000); // 1000 milissegundos = 1 segundo
 
     if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
         return aberto.classList.toggle('active');
