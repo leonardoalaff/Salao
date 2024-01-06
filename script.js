@@ -58,6 +58,16 @@ window.addEventListener('load', () => {
     }
 })
 
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        anuncio.classList.toggle('active')
+    }, 3000); // 1000 milissegundos = 1 segundo
+})
+
+
 sair.addEventListener('click', () => {
     anuncio.classList.toggle('active')
 })
+
+

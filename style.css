@@ -27,15 +27,15 @@ html {scroll-behavior: smooth;}
     backdrop-filter: blur(10px);
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 100;
-    
+    transition: 0.5s;
 }
-#anuncio.active {display: none;}
+#anuncio.active{display: flex;}
 
 #super-vale {
     background: url('imagens/super-vale.svg') no-repeat;
