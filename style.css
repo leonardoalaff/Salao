@@ -117,6 +117,21 @@ header {
 .ih5 {background-image: url('imagens/icones/img-header5.svg');}
 .ih6 {background-image: url('imagens/icones/img-header6.svg');}
 
+#local{
+    width: 100%;
+    position: relative;
+    top: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+#icone-local {
+
+}
+#p-local{}
+
 .horario {
     position: relative;
     top: 265px;
