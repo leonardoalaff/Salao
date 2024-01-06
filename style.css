@@ -71,7 +71,7 @@ header {
     top: 0;
    position: absolute;
    width: 100%;
-   background: linear-gradient(to top, rgb(5, 190, 135) 50%, rgba(3, 49, 17, 0.897));
+   background: linear-gradient(to top, rgb(5, 190, 135) 50%, rgba(3, 49, 17, 0.822) 100%);
    height: 400px;
    z-index: 1;
    border-radius: 0 0 30px 30px;
@@ -217,7 +217,7 @@ header {
 .aberto {
     text-align: center;
     padding: 10px 0;
-    background-color: rgb(6, 70, 6);
+    background-color: var(--header);
     color: white;
     font-weight: bold;
     letter-spacing: 7px;
@@ -425,9 +425,9 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     width: 100%;
     height:1500px;
     transition: 0.3s;
-    border-radius: 20px 20px 0 0;
+    border-radius: 30px 30px 0 0;
+    background: var(--header);
 }
-#sessao2.active{background: var(--header);}
 
 /************************** CONFG. GRAIS DE PRODUTOS ****************/
 .seta {

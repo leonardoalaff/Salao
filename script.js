@@ -35,10 +35,6 @@ iconeMenu.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     nav.classList.toggle('active', scrollY > 100)
     iconeWPP.classList.toggle('active', scrollY > 10)
-
-    nav.classList.toggle('verduras', scrollY > 449) 
-    sessao2.classList.toggle('active', scrollY > 350) 
-
     seta.classList.toggle('active', scrollY > 450)
 })
 
