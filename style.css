@@ -14,6 +14,7 @@
     --laranja: #FFA500;
     --amarelo-palido: #FFFACD;
     --marrom-terra: #8B4513;
+    --header: rgb(5, 190, 135);
 }
 
 ::-webkit-scrollbar {display: none;}
@@ -70,9 +71,11 @@ header {
     top: 0;
    position: absolute;
    width: 100%;
-   background: linear-gradient(to top, transparent, orangered);
-   height: 250px;
+   background: linear-gradient(to top, rgb(5, 190, 135) 50%, rgba(3, 49, 17, 0.897));
+   height: 400px;
    z-index: 1;
+   border-radius: 0 0 20px 20px;
+   box-shadow: 10px 10px 10px rgba(7, 172, 117, 0.432);
 }
 
 .rolagem-header {
@@ -89,7 +92,7 @@ header {
     margin: 0 17px;
     height: 70px;
     min-width: 70px;
-    border: 3px solid orangered;
+    border: 3px solid white;
     border-radius: 50%;
     background: var(--verde-escuro);
 }
@@ -101,8 +104,8 @@ header {
     font-size: 15px;
     text-align: center;
     letter-spacing: 1px;
-    background-color: orangered;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 20px;
     padding: 2px 4px;
 }
@@ -114,24 +117,15 @@ header {
 .ih5 {background-image: url('imagens/icones/img-header5.svg');}
 .ih6 {background-image: url('imagens/icones/img-header6.svg');}
 
-
-.linha {
-    background-color: orangered;
-    width: 100%;
-    height: 3px;
-    position: relative;
-    top: 200px;
-    z-index: -1;
-}
 .horario {
     position: relative;
-    top: 140px;
+    top: 265px;
     margin: auto;
     width: 80%;
     height: 130px;
     border-radius: 20px 20px 20px 20px;
-    background: orangered;
-    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.521);
+    background: whitesmoke;
+    box-shadow: 7px 7px 10px rgba(4, 32, 24, 0.637);
     z-index: -1;
     transition: 0.5s;
 }
@@ -140,21 +134,21 @@ header {
     text-align: center;
     padding: 10px;
     padding-bottom: 0;
-    color: white;
+    color: black;
     letter-spacing: 3px;
     transition: 0.5s;
 }
 
 .p-horario {
     text-align: center;
-    color: white;
+    color: black;
     letter-spacing: 5px;
 }
 
 .p2-horario {
     margin: 10px;
     text-align: center;
-    color: white;
+    color: black;
     letter-spacing: 5px;
     font-weight: bold;
 }
@@ -191,13 +185,13 @@ nav {
     align-items: center;
     transition: 0.4s;
 }
-nav.active {background: orangered;}
-nav.verduras {background: var(--verde-escuro);}
+nav.active {background: rgb(5, 190, 135);}
+nav.verduras {background: var(--header);}
 nav.legumes {background: var(--laranja);}
-nav.frutas {background: cyan;}
-nav.bebidas {background: red;}
-nav.sorvetes {background: var(--amarelo-palido);}
-nav.acai {background: purple;}
+nav.frutas {background: rgb(3, 83, 83);}
+nav.bebidas {background: rgb(51, 4, 4);}
+nav.sorvetes {background: cyan;}
+nav.acai {background: rgb(58, 3, 58);}
 
 .logo {
     padding: 20px;
@@ -259,7 +253,7 @@ nav.acai {background: purple;}
     left: -100%;
     top: 0;
     list-style: none;
-    background: orangered;
+    background: rgb(5, 190, 135);
     color: white;
     transition: 0.5s;
 
@@ -300,7 +294,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .rolagem {
     display: flex;
     position: relative;
-    top: 100px;
+    top: 250px;
     width:100%;
     height: 13rem;
     margin: auto;
@@ -311,7 +305,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     display: flex;
     justify-content: center;
     position: relative;
-    top: 100px;
+    top: 250px;
     text-align: center;
     padding: 10px;
 }
@@ -345,7 +339,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .p-info {
     text-align: center;
     padding: 20px;
-    background: orangered;
+    background: rgb(5, 190, 135);
     border-radius: 0 0 20px 20px;
     color: white;
 }
@@ -370,12 +364,13 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 
 /*********** SESSÃO 2 **********/
 #sessao2 {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height:100vh;
+    height:1500px;
     transition: 0.5s;
+    border-radius: 20px 20px 0 0;
 }
-#sessao2.active{background: var(--verde-escuro) url('imagens/backgrounds/bg-verduras.svg');}
+#sessao2.active{background: var(--header);}
 
 /************************** CONFG. GRAIS DE PRODUTOS ****************/
 .seta {
@@ -392,7 +387,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     border-radius: 2px;
     z-index: 100;
 }
-.seta.active{display: flex;}
+.seta.active{display: flex; z-index: 100;}
 
 #titulo-verduras {
     position: relative;
@@ -401,101 +396,21 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     font-size: 30px;
     color: white;
 }
-.lista-produtos {
-    height: 520px;
+
+.rolagem-verduras {
+    height: 160px;
+    width: 100%;
+    display: flex;
     position: relative;
-    top: 100px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
-    align-items: center;
+    top: 70px;
+    overflow-x: auto;
+    margin-bottom: 50px;
 }
 .bloco-verduras {
-    height: 150px;
-    width: 100px;
+    max-height: 150px;
+    min-width: 100px;
+    background-color: white;
     margin: 10px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
 }
-.bloco-verduras::before {
-    content: 'Nome';
-    color: red;
-
-    background-color: white;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    position: relative;
-    top: -35px;
-    border-radius: 10px 10px 0 0 ;
-}
-
-.precos {
-    background-color: white;
-    width: 70px;
-    height: 30px;
-    position: relative;
-    top: 36px;
-    left: 35px;
-    border-radius: 5px; 
-}
-
-
-/*********** SESSÃO 3 **********/
-#sessao3 {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    transition: 0.5s;
-    background: var(--verde-escuro);
-}
-#sessao3.active{background: var(--laranja) url('imagens/backgrounds/bg-legumes.svg');}
-
-
-/*********** SESSÃO 4 **********/
-#sessao4 {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    transition: 0.5s;
-    background-color: var(--laranja);
-}
-#sessao4.active{background: cyan url('imagens/backgrounds/bg-frutas.svg'); background-size: contain;}
-#sessao4 #titulo-verduras {color: red;}
-
-
-/*********** SESSÃO 5 **********/
-#sessao5 {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    transition: 0.5s;
-    background-color: var(--amarelo-palido);
-}
-#sessao5.active{background: red url('imagens/backgrounds/bg-bebidas.png');}
-
-
-/*********** SESSÃO 6 **********/
-#sessao6 {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    transition: 0.5s;
-    background-color: red;
-}
-#sessao6.active{background: var(--amarelo-palido) url('imagens/backgrounds/bg-sorvete.svg');}
-#sessao6 #titulo-verduras {color: purple;}
-
-
-/*********** SESSÃO 7 **********/
-#sessao7 {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    transition: 0.5s;
-    background-color: var(--amarelo-palido);
-}
-#sessao7.active{background: purple url('imagens/backgrounds/bgacai.png')}
