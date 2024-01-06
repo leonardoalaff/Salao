@@ -18,6 +18,14 @@ let seta = document.querySelector('.seta')
 let sair = document.querySelector('#sair')
 let anuncio = document.querySelector('#anuncio')
 
+let comoChegar = document.querySelector('#como-chegar')
+let mapa = document.querySelector('.mapa')
+let iconeLocal = document.querySelector('#icone-local')
+let pLocal = document.querySelector('#p-local')
+let fechar = document.querySelector('#fechar')
+let abrirMaps = document.querySelector('#abrir-no-maps')
+let rolagemHeader = document.querySelector('.rolagem-header')
+
 
 iconeMenu.addEventListener('click', () => {
     iconeMenu.classList.toggle('active')
@@ -53,6 +61,17 @@ window.addEventListener('load', () => {
 
 sair.addEventListener('click', () => {
     anuncio.classList.toggle('active')
+})
+
+comoChegar.addEventListener('click', () => {
+    mapa.classList.toggle('active')
+    comoChegar.classList.toggle('active')
+    iconeLocal.classList.toggle('active')
+    pLocal.classList.toggle('active')
+    abrirMaps.classList.toggle('active')
+    rolagemHeader.classList.toggle('active')
+    nav.classList.toggle('close')
+    horario.classList.toggle('active')
 })
 
 
