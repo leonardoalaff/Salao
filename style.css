@@ -21,6 +21,57 @@ html {scroll-behavior: smooth;}
 
 .sessao1, .sessao2, body, main {overflow-x: hidden;}
 
+
+#anuncio {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+}
+#anuncio.active {display: none;}
+
+#super-vale {
+    background: url('imagens/super-vale.svg') no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 10px groove gray ;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: right;
+    border-radius: 10px;
+}
+#sair {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+    right: -25px;
+    box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blackg;
+    color: white;
+}
+#sair span {
+    transform: scale(1.7);
+    position: relative;
+    top: -1px;
+    right: -1px;
+}
+
 header {
     top: 0;
    position: absolute;

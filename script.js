@@ -25,6 +25,8 @@ let sessao7 = document.querySelector('#sessao7')
 let aberto = document.querySelector('.aberto')
 let fechado = document.querySelector('.fechado')
 let seta = document.querySelector('.seta')
+let sair = document.querySelector('#sair')
+let anuncio = document.querySelector('#anuncio')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -54,4 +56,8 @@ window.addEventListener('load', () => {
     } else {
         return fechado.classList.toggle('active');
     }
+})
+
+sair.addEventListener('click', () => {
+    anuncio.classList.toggle('active')
 })
