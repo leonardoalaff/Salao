@@ -32,11 +32,11 @@ html {scroll-behavior: smooth; scroll-padding-top: 200px;}
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: -20px;
+    top: -30px;
     z-index: 100;
     transition: 0.5s;
 }
-#anuncio.active{display: flex;}
+#anuncio.active{display: flex; transform:}
 
 #super-vale {
     background: url('imagens/super-vale.svg') no-repeat;
