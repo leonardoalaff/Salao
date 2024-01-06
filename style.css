@@ -75,7 +75,7 @@ header {
    height: 400px;
    z-index: 1;
    border-radius: 0 0 30px 30px;
-   box-shadow: 10px 10px 10px rgba(7, 172, 117, 0.432);
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.377);
 }
 
 .rolagem-header {
