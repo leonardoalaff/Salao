@@ -472,52 +472,48 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 }
 
 /************************** VERDURAS ****************/
-.box-verduras {background: white url('imagens/produtos/verduras/alface.svg');}
-.ver1{}
-.ver2{}
-.ver3{}
-.ver4{}
-.ver5{}
-.ver6{}
-.ver7{}
-.ver8{}
-.ver9{}
+.ver1{background: white url('imagens/produtos/verduras/alface.svg');}
+.ver2{background: white url('imagens/produtos/verduras/couve.svg');}
+.ver3{background: white url('imagens/produtos/verduras/salsinha.svg');}
+.ver4{background: white url('imagens/produtos/verduras/almeirao.svg');}
+.ver5{background: white url('imagens/produtos/verduras/cebolinha.svg');}
+.ver6{background: white;}
+.ver7{background: white;}
+.ver8{background: white;}
+.ver9{background: white;}
 
 /************************** LEGUMES ****************/
-.box-legumes {background: white url('imagens/produtos/legumes/cenoura.svg');}
-.leg1{}
-.leg2{}
-.leg3{}
-.leg4{}
-.leg5{}
-.leg6{}
-.leg7{}
-.leg8{}
-.leg9{}
+.leg1{background: white url('imagens/produtos/legumes/inhame.svg');}
+.leg2{background: white url('imagens/produtos/legumes/abobora.svg');}
+.leg3{background: white url('imagens/produtos/legumes/chuchu.svg');}
+.leg4{background: white url('imagens/produtos/legumes/pimentao.svg');}
+.leg5{background: white;}
+.leg6{background: white;}
+.leg7{background: white;}
+.leg8{background: white;}
+.leg9{background: white;}
 
 /************************** FRUTAS ****************/
-.box-frutas {background: white url('imagens/produtos/frutas/abacaxi.svg');}
-.fru1{}
-.fru2{}
-.fru3{}
-.fru4{}
-.fru5{}
-.fru6{}
-.fru7{}
-.fru8{}
-.fru9{}
+.fru1{background: white url('imagens/produtos/frutas/laranja.svg');}
+.fru2{background: white url('imagens/produtos/frutas/pera.svg');}
+.fru3{background: white url('imagens/produtos/frutas/maca.svg');}
+.fru4{background: white url('imagens/produtos/frutas/abacaxi.svg');}
+.fru5{background: white;}
+.fru6{background: white;}
+.fru7{background: white;}
+.fru8{background: white;}
+.fru9{background: white;}
 
 /************************** BEBIDAS ****************/
-.box-bebidas {background: white url('imagens/produtos/bebidas/coca-cola.svg');}
-.beb1{}
-.beb2{}
-.beb3{}
-.beb4{}
-.beb5{}
-.beb6{}
-.beb7{}
-.beb8{}
-.beb9{}
+.beb1{background: white url('imagens/produtos/bebidas/coca-cola.svg');}
+.beb2{background: white;}
+.beb3{background: white;}
+.beb4{background: white;}
+.beb5{background: white;}
+.beb6{background: white;}
+.beb7{background: white;}
+.beb8{background: white;}
+.beb9{background: white;}
 
 /************************** SORVETE ****************/
 .box-sorvete {background: white url('imagens/produtos/sorvete/casquinha.svg');}
