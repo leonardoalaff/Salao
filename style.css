@@ -344,14 +344,14 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 #sessao1 {
     position: relative;
     width: 100%;
-    height:550px;
+    height:570px;
     margin-top: 250px;
 }
 
 .rolagem {
     display: flex;
     position: relative;
-    top: 250px;
+    top: 270px;
     width:100%;
     height: 13rem;
     margin: auto;
@@ -362,7 +362,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     display: flex;
     justify-content: center;
     position: relative;
-    top: 250px;
+    top: 270px;
     text-align: center;
     padding: 10px;
 }
@@ -423,9 +423,8 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 #sessao2 {
     position: absolute;
     width: 100%;
-    height:1500px;
+    height:1610px;
     transition: 0.3s;
-    border-radius: 30px 30px 0 0;
     background: var(--header);
 }
 
@@ -455,7 +454,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 }
 
 .rolagem-verduras {
-    height: 160px;
+    height: 180px;
     width: 100%;
     display: flex;
     position: relative;
@@ -466,8 +465,80 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .bloco-verduras {
     max-height: 150px;
     min-width: 100px;
-    background-color: white;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+    background-color: white;
 }
+
+/************************** VERDURAS ****************/
+.box-verduras {background: white url('imagens/produtos/verduras/alface.svg');}
+.ver1{}
+.ver2{}
+.ver3{}
+.ver4{}
+.ver5{}
+.ver6{}
+.ver7{}
+.ver8{}
+.ver9{}
+
+/************************** LEGUMES ****************/
+.box-legumes {background: white url('imagens/produtos/legumes/cenoura.svg');}
+.leg1{}
+.leg2{}
+.leg3{}
+.leg4{}
+.leg5{}
+.leg6{}
+.leg7{}
+.leg8{}
+.leg9{}
+
+/************************** FRUTAS ****************/
+.box-frutas {background: white url('imagens/produtos/frutas/abacaxi.svg');}
+.fru1{}
+.fru2{}
+.fru3{}
+.fru4{}
+.fru5{}
+.fru6{}
+.fru7{}
+.fru8{}
+.fru9{}
+
+/************************** BEBIDAS ****************/
+.box-bebidas {background: white url('imagens/produtos/bebidas/coca-cola.svg');}
+.beb1{}
+.beb2{}
+.beb3{}
+.beb4{}
+.beb5{}
+.beb6{}
+.beb7{}
+.beb8{}
+.beb9{}
+
+/************************** SORVETE ****************/
+.box-sorvete {background: white url('imagens/produtos/sorvete/casquinha.svg');}
+.sor1{}
+.sor2{}
+.sor3{}
+.sor4{}
+.sor5{}
+.sor6{}
+.sor7{}
+.sor8{}
+.sor9{}
+
+/************************** AÇAÍ ****************/
+.box-acai{background: white url('imagens/produtos/acai/acai.svg');}
+.aca1{}
+.aca2{}
+.aca3{}
+.aca4{}
+.aca5{}
+.aca6{}
+.aca7{}
+.aca8{}
+.aca9{}
