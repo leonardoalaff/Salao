@@ -44,12 +44,12 @@ html {scroll-behavior: smooth; scroll-padding-top: 200px;}
     width: 300px;
     height: 400px;
     background-color: white;
-    border: 10px groove gray ;
+    border: 7px solid white ;
     position: fixed;
     z-index: 100;
     display: flex;
     justify-content: right;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 #sair {
     background-color: red;
@@ -487,7 +487,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .leg2{background: white url('imagens/produtos/legumes/abobora.svg');}
 .leg3{background: white url('imagens/produtos/legumes/chuchu.svg');}
 .leg4{background: white url('imagens/produtos/legumes/pimentao.svg');}
-.leg5{background: white;}
+.leg5{background: white url('imagens/produtos/legumes/couve-flor.svg');}
 .leg6{background: white;}
 .leg7{background: white;}
 .leg8{background: white;}
@@ -498,11 +498,11 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .fru2{background: white url('imagens/produtos/frutas/pera.svg');}
 .fru3{background: white url('imagens/produtos/frutas/maca.svg');}
 .fru4{background: white url('imagens/produtos/frutas/abacaxi.svg');}
-.fru5{background: white;}
-.fru6{background: white;}
-.fru7{background: white;}
-.fru8{background: white;}
-.fru9{background: white;}
+.fru5{background: white url('imagens/produtos/frutas/uva.svg');}
+.fru6{background: white url('imagens/produtos/frutas/morango.svg');}
+.fru7{background: white url('imagens/produtos/frutas/maracuja.svg');}
+.fru8{background: white url('imagens/produtos/frutas/melao.svg');}
+.fru9{background: white url('imagens/produtos/frutas/abacate.svg');}
 
 /************************** BEBIDAS ****************/
 .beb1{background: white url('imagens/produtos/bebidas/coca-cola.svg');}
