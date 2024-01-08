@@ -37,6 +37,7 @@ let foto2 = document.querySelector('.foto2')
 let foto3 = document.querySelector('.foto3')
 let boxCarrossel2 = document.querySelector('.box-carrossel2')
 let sessao3 =document.querySelector('.sessao3')
+let carrossel = document.querySelector('.carrossel')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -56,7 +57,7 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        nuncio.classList.toggle('active')
+        anuncio.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
     if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
@@ -85,14 +86,26 @@ comoChegar.addEventListener('click', () => {
 
 botao1.addEventListener('click', () => {
     boxCarrossel2.className = 'fig1'
-    sessao3.className = 'bg1'
+    carrossel.className = 'bg1'
+    sessao3.className = 's3-1'
+    botao1.style.border = '3px solid white'
+    botao2.style.border = 'none'
+    botao3.style.border = 'none'
 })
 
 botao2.addEventListener('click', () => {
     boxCarrossel2.className = 'fig2'
-    sessao3.className = 'bg2'
+    carrossel.className = 'bg2'
+    sessao3.className = 's3-2'
+    botao2.style.border = '3px solid white'
+    botao1.style.border = 'none'
+    botao3.style.border = 'none'
 })
 botao3.addEventListener('click', () => {
     boxCarrossel2.className = 'fig3'
-    sessao3.className = 'bg3'
+    carrossel.className = 'bg3'
+    sessao3.className = 's3-3'
+    botao3.style.border = '3px solid white'
+    botao1.style.border = 'none'
+    botao2.style.border = 'none'
 })
