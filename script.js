@@ -26,6 +26,18 @@ let fechar = document.querySelector('#fechar')
 let abrirMaps = document.querySelector('#abrir-no-maps')
 let rolagemHeader = document.querySelector('.rolagem-header')
 
+let botao1 = document.querySelector('.btn1')
+let botao2 = document.querySelector('.btn2')
+let botao3 = document.querySelector('.btn3')
+let img1 = document.querySelector('.img1')
+let img2 = document.querySelector('.img2')
+let img3 = document.querySelector('.img3')
+let foto1 = document.querySelector('.foto1')
+let foto2 = document.querySelector('.foto2')
+let foto3 = document.querySelector('.foto3')
+let boxCarrossel2 = document.querySelector('.box-carrossel2')
+let sessao3 =document.querySelector('.sessao3')
+
 
 iconeMenu.addEventListener('click', () => {
     iconeMenu.classList.toggle('active')
@@ -44,7 +56,7 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        anuncio.classList.toggle('active')
+        nuncio.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
     if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
@@ -71,3 +83,16 @@ comoChegar.addEventListener('click', () => {
 })
 
 
+botao1.addEventListener('click', () => {
+    boxCarrossel2.className = 'fig1'
+    sessao3.className = 'bg1'
+})
+
+botao2.addEventListener('click', () => {
+    boxCarrossel2.className = 'fig2'
+    sessao3.className = 'bg2'
+})
+botao3.addEventListener('click', () => {
+    boxCarrossel2.className = 'fig3'
+    sessao3.className = 'bg3'
+})

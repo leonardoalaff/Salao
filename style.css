@@ -421,7 +421,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 
 /*********** SESSÃO 2 **********/
 #sessao2 {
-    position: absolute;
+    position: relative;
     width: 100%;
     height:1610px;
     transition: 0.3s;
@@ -538,3 +538,110 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .aca7{}
 .aca8{}
 .aca9{}
+
+
+/*********** SESSÃO 3 **********/
+.sessao3 {
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    transition: 0.5s;
+}
+.bg1 {
+    background: green;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+}
+.bg2 {
+    background: yellow;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+}
+.bg3 {
+    background: orange;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.carrossel {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-carrossel {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+}
+.box-carrossel2 {
+    width: 300%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    left: -10%;
+    transition: 0.5s linear;
+}
+.fig1, .fig2, .fig3 {
+    width: 300%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    left: -10%;
+    transition: 0.5s linear;
+}
+.fig1{transform: translateX(0);}
+.fig2{transform: translateX(-100%);}
+.fig3{transform: translateX(-200%);}
+
+.img1, .img2, .img3 {
+    min-width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2.5);
+    transition: 0.5s;
+}
+
+/*.foto1, .foto2, .foto3 {
+    min-width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2);
+    transition: 0.5s;
+}*/
+
+
+.box-btn {
+    position: relative;
+    right: -80%;
+    width: 60px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-carrossel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: yellow;
+    margin: 10px;
+}
+.btn1{background: rgb(224, 224, 160);}
+.btn2{background: rgb(216, 216, 35);}
+.btn3{background: rgba(218, 218, 4, 0.781);}
