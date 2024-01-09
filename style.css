@@ -488,10 +488,11 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .leg3{background: white url('imagens/produtos/legumes/chuchu.svg');}
 .leg4{background: white url('imagens/produtos/legumes/pimentao.svg');}
 .leg5{background: white url('imagens/produtos/legumes/couve-flor.svg');}
-.leg6{background: white;}
-.leg7{background: white;}
-.leg8{background: white;}
-.leg9{background: white;}
+.leg6{background: white url('imagens/produtos/legumes/cebola.svg');}
+.leg7{background: white url('imagens/produtos/legumes/batata.svg');}
+.leg8{background: white url('imagens/produtos/legumes/repolho.svg');}
+.leg9{background: white url('imagens/produtos/legumes/batata-doce.svg');}
+.leg10{background: white url('imagens/produtos/legumes/abobrinha.svg');}
 
 /************************** FRUTAS ****************/
 .fru1{background: white url('imagens/produtos/frutas/laranja.svg');}
