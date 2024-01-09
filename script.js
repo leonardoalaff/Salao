@@ -26,19 +26,6 @@ let fechar = document.querySelector('#fechar')
 let abrirMaps = document.querySelector('#abrir-no-maps')
 let rolagemHeader = document.querySelector('.rolagem-header')
 
-let botao1 = document.querySelector('.btn1')
-let botao2 = document.querySelector('.btn2')
-let botao3 = document.querySelector('.btn3')
-let img1 = document.querySelector('.img1')
-let img2 = document.querySelector('.img2')
-let img3 = document.querySelector('.img3')
-let foto1 = document.querySelector('.foto1')
-let foto2 = document.querySelector('.foto2')
-let foto3 = document.querySelector('.foto3')
-let boxCarrossel2 = document.querySelector('.box-carrossel2')
-let sessao3 =document.querySelector('.sessao3')
-let carrossel = document.querySelector('.carrossel')
-
 
 iconeMenu.addEventListener('click', () => {
     iconeMenu.classList.toggle('active')
@@ -81,31 +68,4 @@ comoChegar.addEventListener('click', () => {
     rolagemHeader.classList.toggle('active')
     nav.classList.toggle('close')
     horario.classList.toggle('active')
-})
-
-
-botao1.addEventListener('click', () => {
-    boxCarrossel2.className = 'fig1'
-    carrossel.className = 'bg1'
-    sessao3.className = 's3-1'
-    botao1.style.border = '3px solid white'
-    botao2.style.border = 'none'
-    botao3.style.border = 'none'
-})
-
-botao2.addEventListener('click', () => {
-    boxCarrossel2.className = 'fig2'
-    carrossel.className = 'bg2'
-    sessao3.className = 's3-2'
-    botao2.style.border = '3px solid white'
-    botao1.style.border = 'none'
-    botao3.style.border = 'none'
-})
-botao3.addEventListener('click', () => {
-    boxCarrossel2.className = 'fig3'
-    carrossel.className = 'bg3'
-    sessao3.className = 's3-3'
-    botao3.style.border = '3px solid white'
-    botao1.style.border = 'none'
-    botao2.style.border = 'none'
 })
