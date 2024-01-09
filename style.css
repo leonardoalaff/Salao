@@ -544,10 +544,18 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .sessao3 {
     width: 100%;
     height: 100vh;
-    background: url('imagens/backgrounds/sorvetes.gif') no-repeat;
-    background-size: contain;
+    background: url('imagens/backgrounds/sorvetes.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-.sessao3 video {
+
+/*********** SESSÃO 4 **********/
+.sessao4 {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background: url('imagens/backgrounds/acai.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
