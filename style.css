@@ -557,13 +557,13 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 #sabores {
     height: 30px;
     position: absolute;
-    transform: translateY(650px);
     padding: 20px;
     display: flex;
     align-items: center;
     border-radius: 10px;
     letter-spacing: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+    transform: translateY(650px);
     transition: 0.5s;
 }
 #sabores.active {transform: translateY(400px);}
@@ -575,13 +575,12 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     height: 300px;
     list-style: none;
     position: relative;
-    bottom: 0;
-    transform: translateY(250%);
+    bottom: -100%;
     text-align: center;
     border-radius: 20px 20px 0 0;
     transition: 0.5s;
 }
-#lista-sabores.active {transform: translateY(150%);}
+#lista-sabores.active {bottom: -60%;}
 
 #lista-sabores li {
     padding: 15px;
