@@ -545,7 +545,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .sessao3 {
     width: 100%;
     height: 100vh;
-    background: url('imagens/backgrounds/sorvetes.gif');
+    background: #331117 url('imagens/backgrounds/sorvetes.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -555,45 +555,48 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 }
 
 #sabores {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    height: 30px;
     position: relative;
-    bottom: -90%;
+    bottom: 0;
+    top: 70%;
+    color: white;
     padding: 20px;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    letter-spacing: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
-    transition: 0.5s;
-    left: 0;
-    margin: 5px;
+    border-radius: 10px 10px 0 0;
+    background: #1b080c url('imagens/produtos/sorvete2/bg-chocolate.svg');
+    background-size: cover;
 }
-
-#lista-sabores {
-    border: 1px solid white;
-    background: transparent;
-    backdrop-filter: blur(20px);
-    min-width: 13rem;
-    height: 300px;
-    list-style: none;
+.saboresp {
     position: relative;
-    bottom: -100%;
-    text-align: center;
     transition: 0.5s;
-    margin: 0;
-}
-#lista-sabores.active {
-    bottom: -60%;
-}
-
-#lista-sabores li {
     padding: 10px;
-    color: white;
-    font-size: 25px;
+    background: #331117;
+    border-radius: 10px;
+    top: 15px;
+    box-shadow: 5px 5px 7px black;
+}
+.saboresp.active {top: 100px;}
+
+.lista-sabores {
+    position: absolute;
+    left: -100%;
+    margin-top: 150px;
+    background: #331117;
+    width: 60%;
+    height: 400px;
+    text-align: center;
+    color: #BF7338;
+    font-size: 20px;
+    list-style: none;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 7px 7px 10px black;
+    transition: 0.5s;
+}
+.lista-sabores.active{left: 0;}
+.lista-sabores li {
+    padding: 25px;
     position: relative;
-    top: 25px;
+    top: 10px;
 }
 
 /*********** SESSÃO 4 **********/

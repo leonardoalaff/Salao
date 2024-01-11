@@ -26,7 +26,8 @@ let fechar = document.querySelector('#fechar')
 let abrirMaps = document.querySelector('#abrir-no-maps')
 let rolagemHeader = document.querySelector('.rolagem-header')
 let sabores = document.querySelector('#sabores')
-let saboresLista = document.querySelector('#lista-sabores')
+let saboresLista = document.querySelector('.lista-sabores')
+let saboresP = document.querySelector('.saboresp')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -73,6 +74,6 @@ comoChegar.addEventListener('click', () => {
 })
 
 sabores.addEventListener('click', () => {
-    sabores.classList.toggle('active')
     saboresLista.classList.toggle('active')
+    saboresP.classList.toggle('active')
 })
