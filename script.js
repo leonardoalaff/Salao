@@ -25,9 +25,6 @@ let pLocal = document.querySelector('#p-local')
 let fechar = document.querySelector('#fechar')
 let abrirMaps = document.querySelector('#abrir-no-maps')
 let rolagemHeader = document.querySelector('.rolagem-header')
-let sabores = document.querySelector('#sabores')
-let saboresLista = document.querySelector('.lista-sabores')
-let saboresP = document.querySelector('.saboresp')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -71,9 +68,4 @@ comoChegar.addEventListener('click', () => {
     rolagemHeader.classList.toggle('active')
     nav.classList.toggle('close')
     horario.classList.toggle('active')
-})
-
-sabores.addEventListener('click', () => {
-    saboresLista.classList.toggle('active')
-    saboresP.classList.toggle('active')
 })
