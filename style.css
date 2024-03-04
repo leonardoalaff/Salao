@@ -263,10 +263,10 @@ nav.close {display: none;}
 }
 
 .supervale-icon {
-    transform: scale(0.09);
+    transform: scale(0.08);
     position: relative;
-    right: 320px;
-}
+    right: 89%;
+    }
 
 /*********** MENU **********/
 .icone-menu {
