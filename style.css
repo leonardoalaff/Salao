@@ -262,6 +262,12 @@ nav.close {display: none;}
     user-select: none;
 }
 
+.supervale-icon {
+    transform: scale(0.09);
+    position: relative;
+    right: 320px;
+}
+
 /*********** MENU **********/
 .icone-menu {
     padding: 20px;
