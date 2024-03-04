@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Protest+Riot&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +39,7 @@ html {scroll-behavior: smooth; scroll-padding-top: 200px;}
     z-index: 100;
     transition: 0.5s;
 }
-#anuncio.active{display: flex; transform:}
+#anuncio.active{display: flex; transform:0.5s}
 
 #super-vale {
     background: url('imagens/super-vale.svg') no-repeat;
@@ -71,7 +74,7 @@ header {
     top: 0;
    position: absolute;
    width: 100%;
-   background: linear-gradient(to top, rgb(5, 190, 135) 50%, rgba(3, 49, 17, 0.822) 100%);
+   background: #007fc7;
    height: 400px;
    z-index: 1;
    border-radius: 0 0 30px 30px;
@@ -155,7 +158,7 @@ header {
     left: -100%;
     padding: 10px;
     color: white;
-    background: black;
+    background: #007fc7;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -217,7 +220,7 @@ header {
 .aberto {
     text-align: center;
     padding: 10px 0;
-    background-color: var(--header);
+    background-color: green;
     color: white;
     font-weight: bold;
     letter-spacing: 7px;
@@ -229,7 +232,7 @@ header {
 .fechado {
     text-align: center;
     padding: 10px 0;
-    background-color: black;
+    background-color: red;
     color: white;
     font-weight: bold;
     letter-spacing: 7px;
@@ -247,7 +250,7 @@ nav {
     align-items: center;
     transition: 0.4s;
 }
-nav.active {background: rgb(5, 190, 135);}
+nav.active {background: #007fc7;}
 nav.close {display: none;}
 
 .logo {
@@ -310,9 +313,10 @@ nav.close {display: none;}
     left: -100%;
     top: 0;
     list-style: none;
-    background: rgb(5, 190, 135);
+    background: #007fc7;
     color: white;
     transition: 0.5s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
 
     z-index: 2;
 }
@@ -380,7 +384,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     max-height: 10rem; /* equivale a 170px, aprox.*/
     margin: 10px;
     border-radius: 20px;
-    box-shadow: 8px 8px 17px rgb(0, 0, 0);
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.692);
 }
 .h2-info {
     margin: 20px;
@@ -394,9 +398,11 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     border-radius: 20px;
 }
 .p-info {
+    font-family: "Protest Riot", sans-serif;
+    font-size: 20px;
     text-align: center;
     padding: 20px;
-    background: rgb(5, 190, 135);
+    background: #007fc7;
     border-radius: 0 0 20px 20px;
     color: white;
 }
@@ -425,7 +431,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     width: 100%;
     height:1100px;
     transition: 0.3s;
-    background: var(--header);
+    background: #007fc7;
 }
 
 /************************** CONFG. GRAIS DE PRODUTOS ****************/
