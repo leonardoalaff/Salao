@@ -248,7 +248,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.4s;
+    transition: 0.1s;
 }
 nav.active {background: #007fc7;}
 nav.close {display: none;}
@@ -265,7 +265,7 @@ nav.close {display: none;}
 .supervale-icon {
     transform: scale(0.08);
     position: relative;
-    right: 89%;
+    right: 305px;
     }
 
 /*********** MENU **********/

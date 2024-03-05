@@ -33,7 +33,7 @@ iconeMenu.addEventListener('click', () => {
 })
 
 window.addEventListener('scroll', () => {
-    nav.classList.toggle('active', scrollY > 100)
+    nav.classList.toggle('active', scrollY > 20)
     iconeWPP.classList.toggle('active', scrollY > 10)
     seta.classList.toggle('active', scrollY > 450)
 })
