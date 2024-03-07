@@ -25,6 +25,8 @@ let pLocal = document.querySelector('#p-local')
 let fechar = document.querySelector('#fechar')
 let abrirMaps = document.querySelector('#abrir-no-maps')
 let rolagemHeader = document.querySelector('.rolagem-header')
+let calcular = document.querySelector('.calcular')
+let calculator = document.querySelector('.calculator')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -33,7 +35,7 @@ iconeMenu.addEventListener('click', () => {
 })
 
 window.addEventListener('scroll', () => {
-    nav.classList.toggle('active', scrollY > 20)
+    nav.classList.toggle('active', scrollY > 0)
     iconeWPP.classList.toggle('active', scrollY > 10)
     seta.classList.toggle('active', scrollY > 450)
 })
@@ -44,7 +46,7 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        nuncio.classList.toggle('active')
+        anuncio.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
     if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
@@ -52,6 +54,11 @@ window.addEventListener('load', () => {
     } else {
         return fechado.classList.toggle('active');
     }
+})
+
+calcular.addEventListener('click', () => {
+    calculator.classList.toggle('active')
+    calcular.classList.toggle('active')
 })
 
 
@@ -69,3 +76,20 @@ comoChegar.addEventListener('click', () => {
     nav.classList.toggle('close')
     horario.classList.toggle('active')
 })
+
+//**** CALCULADORA ****
+function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+}
+
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
+
+function calculate() {
+    try {
+        document.getElementById('display').value = eval(document.getElementById('display').value);
+    } catch(error) {
+        document.getElementById('display').value = 'Error';
+    }
+}
