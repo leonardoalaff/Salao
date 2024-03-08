@@ -381,10 +381,20 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #007fc7;
+    background-image: linear-gradient(to left, rgb(4, 114, 158), rgb(240, 17, 229), #007fc7);
+    background-size: 500% 100%;
     box-shadow: 7px 7px 10px rgba(41, 42, 43, 0.452);
+    animation: degrade-animado 2s infinite alternate;
     transform: translateX(0);
     transition: 0.3s;
+}
+@keyframes degrade-animado{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
 }
 .calculator button {
     width: 50px;
@@ -508,6 +518,68 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     transition: 0.3s;
     background: #007fc7;
 }
+
+
+/************************** SLIDE ****************/
+.slider-container {
+    position: relative;
+    top: 275px;
+    height: 220px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    overflow-x: hidden;
+    height: 100%;
+    transition: transform 0.5s ease; /* Adiciona uma transição suave ao movimento do slider */
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    text-align: center;
+    height: 100%;
+}
+.slide1 {
+    background: url('imagens/backgrounds/Design\ sem\ nome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.slide2 {
+    background: url('imagens/backgrounds/açaí.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.slide h3, .slide p {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 50px 15px;
+    z-index: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
 
 /************************** CONFG. GRAIS DE PRODUTOS ****************/
 .seta {
