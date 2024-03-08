@@ -384,7 +384,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     background-image: linear-gradient(to left, rgb(4, 114, 158), rgb(240, 17, 229), #007fc7);
     background-size: 500% 100%;
     box-shadow: 7px 7px 10px rgba(41, 42, 43, 0.452);
-    animation: degrade-animado 2s infinite alternate;
+    animation: degrade-animado 3s infinite alternate;
     transform: translateX(0);
     transition: 0.3s;
 }
