@@ -46,7 +46,7 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        anuncio.classList.toggle('active')
+        nuncio.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
     if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
@@ -93,3 +93,21 @@ function calculate() {
         document.getElementById('display').value = 'Error';
     }
 }
+
+//**** RELÓGIO ****
+function updateClock() {
+    const now = new Date();
+    const daysOfWeek = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+    const dayOfWeek = daysOfWeek[now.getDay()];
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const timeString = `${dayOfWeek}, ${hours}:${minutes}:${seconds}`;
+    document.getElementById('clock').textContent = timeString;
+  }
+  
+  // Atualiza o relógio a cada segundo
+  setInterval(updateClock, 1000);
+  
+  // Inicializa o relógio ao carregar a página
+  updateClock();
