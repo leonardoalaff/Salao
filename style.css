@@ -725,12 +725,12 @@ h1 {
 }
 
 #addToHomeScreen {
+    display: block;
     margin: 0 auto;
     padding: 10px 20px;
     background-color: #007bff;
-    color: black;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 100;
 }
