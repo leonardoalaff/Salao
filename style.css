@@ -713,3 +713,24 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+
+#sessao3 {
+    height: 400px;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#addToHomeScreen {
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
