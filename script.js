@@ -140,19 +140,15 @@ function updateClock() {
 
 
   //**** TESTE ****
-  document.addEventListener('DOMContentLoaded', function () {
-    // Verifica se o navegador é compatível com a funcionalidade de adicionar atalhos à tela inicial
-    if ("standalone" in window.navigator && window.navigator.standalone) {
-        // Cria um botão para permitir ao usuário adicionar o atalho à tela inicial
-        var addToHomeScreen = document.createElement("div");
-        addToHomeScreen.setAttribute("id", "addToHomeScreen");
-        addToHomeScreen.innerHTML = "Adicionar à Tela Inicial";
-        addToHomeScreen.onclick = function() {
-            // Adiciona o atalho à tela inicial
-            window.navigator.addToHomeScreen();
-        };
+  // Verifica se o navegador suporta a funcionalidade de adicionar à tela inicial
+if ('serviceWorker' in navigator && 'PushManager' in window) {
+    window.addEventListener('beforeinstallprompt', function(e) {
+        // Mostra o prompt para adicionar à tela inicial
+        e.preventDefault();
+        var addToHomeScreen = confirm("Adicionar este site à tela inicial?");
+        if (addToHomeScreen) {
+            e.prompt();
+        }
+    });
+}
 
-        // Adiciona o elemento à página
-        document.body.appendChild(addToHomeScreen);
-    }
-});
