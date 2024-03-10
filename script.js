@@ -161,6 +161,16 @@ if (isAndroidChrome && supportsWebAppManifest) {
             if (installPromptEvent) {
                 // Exibe o prompt para adicionar à tela inicial
                 installPromptEvent.prompt();
+
+                // Espera até que o usuário responda ao prompt
+                const userChoice = await installPromptEvent.userChoice;
+
+                // Registra a escolha do usuário
+                if (userChoice.outcome === 'accepted') {
+                    console.log('O usuário aceitou adicionar à tela inicial');
+                } else {
+                    console.log('O usuário rejeitou adicionar à tela inicial');
+                }
             }
         } catch (error) {
             console.error('Erro ao exibir o prompt de instalação:', error);
