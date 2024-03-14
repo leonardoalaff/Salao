@@ -74,7 +74,7 @@ header {
     top: 0;
    position: absolute;
    width: 100%;
-   background: #007fc7;
+   background: orangered;
    height: 400px;
    z-index: 1;
    border-radius: 0 0 30px 30px;
@@ -158,7 +158,7 @@ header {
     left: -100%;
     padding: 10px;
     color: white;
-    background: #007fc7;
+    background: orangered;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -249,7 +249,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     transition: 0.1s;
-    background: #007fc7;
+    background: orangered;
 }
 
 nav.close {display: none;}
@@ -325,7 +325,7 @@ nav.close {display: none;}
     left: -100%;
     top: 0;
     list-style: none;
-    background: #007fc7;
+    background: orangered;
     color: white;
     transition: 0.5s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
@@ -371,7 +371,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     padding: 20px;
     border: 1px solid rgb(151, 99, 2);
     border-radius: 5px;
-    background-color: #007fc7;
+    background-color: orange;
     transform: translateX(-100%);
     transition: 0.3s;
     z-index: 2;
@@ -510,7 +510,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     width: 100%;
     height:1100px;
     transition: 0.3s;
-    background: #007fc7;
+    background: orangered;
 }
 
 
