@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
 
 @media only screen and (max-width:600px) {
 
@@ -37,13 +38,13 @@ html {scroll-behavior: smooth; scroll-padding-top: 200px;}
     background-color: transparent;
     backdrop-filter: blur(10px);
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
     top: -30px;
-    z-index: 100;
+    z-index: 200;
     transition: 0.5s;
 }
 #anuncio.active{display: flex; transform:0.5s}
@@ -62,7 +63,7 @@ html {scroll-behavior: smooth; scroll-padding-top: 200px;}
     border-radius: 15px;
 }
 #sair {
-    background-color: black;
+    background-color: red;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -81,11 +82,9 @@ header {
     top: 0;
    position: absolute;
    width: 100%;
-   background: #007fc7;
+   background: orangered;
    height: 400px;
    z-index: 1;
-   border-radius: 0 0 30px 30px;
-   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.377);
 }
 
 .rolagem-header {
@@ -109,6 +108,7 @@ header {
     border-radius: 50%;
     background: var(--verde-escuro);
 }
+
 .img-header a {text-decoration: none;}
 .p-header {
     position: relative;
@@ -133,7 +133,7 @@ header {
 #local{
     width: 100%;
     position: relative;
-    top: 130px;
+    top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,13 +146,13 @@ header {
 #p-local {
     color: white;
     padding: 10px;
-    border: 1px solid white;
     border-radius: 5px;
+    font-size: 18px;
 }
 #p-local.active{color: black; background: none;}
 #como-chegar{
     position: relative;
-    top: 20px;
+    top: 10px;
     background: transparent;
     padding: 10px;
     border: 1px solid white;
@@ -171,7 +171,7 @@ header {
     left: -100%;
     padding: 10px;
     color: white;
-    background: black;
+    background: orangered;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -183,7 +183,6 @@ header {
 .mapa{
     width: 100%;
     height: 400px;
-    border-radius: 0 0 30px 30px;
     position: absolute;
     top: 0;
     transform: translateY(-100%);
@@ -196,28 +195,30 @@ header {
 
 .horario {
     position: relative;
-    top: 150px;
+    top: 120px;
     margin: auto;
     width: 80%;
     height: 130px;
-    border-radius: 20px 20px 20px 20px;
     background: whitesmoke;
     box-shadow: 7px 7px 10px rgba(4, 32, 24, 0.637);
     z-index: -1;
     transition: 0.5s;
+    border-radius: 10px 10px 0 0;
 }
-.horario.active {top: 170px;}
+.horario.active {top: 165px;}
 
 .h2-horario {
     text-align: center;
     padding: 10px;
     padding-bottom: 0;
-    color: black;
+    color: rgb(54, 53, 53);
     letter-spacing: 3px;
     transition: 0.5s;
 }
 
 .p-horario {
+    position: relative;
+    top: 2px;
     text-align: center;
     color: black;
     letter-spacing: 5px;
@@ -237,8 +238,9 @@ header {
     color: white;
     font-weight: bold;
     letter-spacing: 7px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 10px 10px;
     display: none;
+    border: 1px solid whitesmoke;
 }
 .aberto.active {display: block;}
 
@@ -262,7 +264,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     transition: 0.1s;
-    background: #007fc7;
+    background: orangered;
 }
 
 nav.close {display: none;}
@@ -338,7 +340,7 @@ nav.close {display: none;}
     left: -100%;
     top: 0;
     list-style: none;
-    background: #007fc7;
+    background: orangered;
     color: white;
     transition: 0.5s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
@@ -432,32 +434,41 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     width: 100%;
     height: 100px;
     position: relative;
-    top: 450px;
+    top: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: -1;
 }
 #clock {
-    background: url('https://media.istockphoto.com/id/1634513475/photo/autumn-or-fall-leaves-in-floral-watercolor-background-for-thanksgiving-or-fall-designs-orange.jpg?b=1&s=612x612&w=0&k=20&c=pgBrR7AGYhRkqxVkdh6I0l3eTctK12NhZ5Ee2m2RMlo=');
-    background-position: left bottom;
+    background: whitesmoke;
     text-align: center;
     width: 250px;
     padding:10px;
     font-size: 2em;
     border-radius: 20px;
-    color: white;
+    color: #535252;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.74);
   }
 
 
   .destaques {
     position: relative;
-    top: 240px;
+    top: 230px;
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 35px;
+    font-size: 25px;
+  }
+  .destaques2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    background: orangered;
+    padding: 10px;
+    width: 95%;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
   }
 
 /*********** SESSÃO 1 **********/
@@ -468,72 +479,15 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     margin-top: 250px;
 }
 
-.rolagem {
-    display: flex;
-    position: relative;
-    top: 270px;
-    width:100%;
-    height: 13rem;
-    margin: auto;
-    overflow-x: auto;
-
-}
-.promo {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 270px;
-    text-align: center;
-    padding: 10px;
-}
-.p-promo {
-    font-size: 30px;
-    letter-spacing: 10px;
-    width: 100%;
-    color: black;
-}
-
-.info-card {
-    min-width: 15rem; /* equivale a 250px, aprox.*/
-    max-height: 10rem; /* equivale a 170px, aprox.*/
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.692);
-}
-.h2-info {
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    background: transparent;
-    backdrop-filter: blur(5px);
-    color: white;
-    border: 1px solid white;
-    font-size: 20px;
-    border-radius: 20px;
-}
-.p-info {
-    font-family: "Protest Riot", sans-serif;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
-    background: #007fc7;
-    border-radius: 0 0 20px 20px;
-    color: white;
-}
-
-.info1 {background: url('imagens/backgrounds/bgs-cards-s1/abacaxi.svg');}
-
-.info2 {background: url('imagens/backgrounds/bgs-cards-s1/morango.svg');}
-
-.info3 {background: url('imagens/backgrounds/bgs-cards-s1/uva.svg');}
-
 .icone-wpp {
     position: fixed;
+    top: 520px;
     right: -60px;
     transform: scale(0.27);
     z-index: 2;
     display: none;
     align-items: end;
+    border-radius: 50%;
 }
 .icone-wpp.active {display: block;}
 
@@ -545,29 +499,41 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     width: 100%;
     height:1100px;
     transition: 0.3s;
-    background: #007fc7;
+    background: orangered;
 }
 
 
 /************************** SLIDE ****************/
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+}
+
 .slide {
     position: relative;
     top: 250px;
-    width: 100%;
+    width: 95%;
     height: 250px;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.781);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.815);
+    border-radius: 10px;
     z-index: 0;
 }
 .slide1 {
-    background: black;
+    background: url('https://www.designi.com.br/images/preview/10010935.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .slide2 {
-    background: #007fc7;
+    background: url('https://www.blogdomarcosilva.com.br/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-02-at-10.04.12.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .fade {
     animation-name: fade;
-    animation-duration: 1s; /* Duração da animação */
+    animation-duration: 0.5s; /* Duração da animação */
 }
 
 @keyframes fade {
@@ -586,6 +552,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .seta {
     transform: scale(3);
     position: fixed;
+    top: 520px;
     background-color: rgba(0, 0, 0, 0.568);
     display: none;
     justify-content: center;
@@ -594,7 +561,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     color: white;
     height: 17px;
     width: 17px;
-    border-radius: 2px;
+    border-radius: 50%;
     z-index: 100;
 }
 .seta.active{display: flex; z-index: 100;}

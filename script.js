@@ -46,7 +46,7 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        nuncio.classList.toggle('active')
+        anuncio.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
     if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
@@ -145,4 +145,4 @@ function showSlide(n) {
 // Definir intervalo para avançar automaticamente os slides a cada 3 segundos (3000 milissegundos)
 setInterval(() => {
     moveSlide(1); // Avançar para o próximo slide
-}, 3000);
+}, 5000);
