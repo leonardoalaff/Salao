@@ -115,25 +115,34 @@ function updateClock() {
 
   /**** SLIDE ****/
   let slideIndex = 0;
-  showSlide(slideIndex);
-  
-  function moveSlide(n) {
-      showSlide(slideIndex += n);
-  }
-  
-  function showSlide(n) {
-      const slides = document.getElementsByClassName("slide");
-      
-      if (n >= slides.length) {
-          slideIndex = 0;
-      }
-      if (n < 0) {
-          slideIndex = slides.length - 1;
-      }
-      
-      for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      
-      slides[slideIndex].style.display = "block";  
-  }
+showSlide(slideIndex);
+
+// Função para mover o slide
+function moveSlide(n) {
+    showSlide(slideIndex += n);
+}
+
+// Função para mostrar o slide atual
+function showSlide(n) {
+    const slides = document.getElementsByClassName("slide");
+
+    if (n >= slides.length) {
+        slideIndex = 0;
+    }
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    // Esconder todos os slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // Mostrar o slide atual
+    slides[slideIndex].style.display = "block";
+}
+
+// Definir intervalo para avançar automaticamente os slides a cada 3 segundos (3000 milissegundos)
+setInterval(() => {
+    moveSlide(1); // Avançar para o próximo slide
+}, 3000);
