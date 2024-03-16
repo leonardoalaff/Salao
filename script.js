@@ -56,7 +56,8 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        nuncio.classList.toggle('active')
+        anuncio.classList.toggle('active')
+        sair.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
     if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
@@ -73,7 +74,8 @@ calcular.addEventListener('click', () => {
 
 
 sair.addEventListener('click', () => {
-    anuncio.classList.toggle('active')
+    anuncio.classList.remove('active')
+    sair.classList.remove('active')
 })
 
 comoChegar.addEventListener('click', () => {
