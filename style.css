@@ -441,8 +441,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     z-index: 1;
 }
 #clock {
-    background: #FF6600;
-    ;
+    background: #FF6600;;
     background-size: cover;
     text-align: center;
     width: 300px;
@@ -459,10 +458,11 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
   }
   #clock.active2 {
     position: relative;
-    transform: translateX(107px);
+    transform: translateX(83%);
     font-size: 15px;
     width: 130px;
     transition: 0.5s;
+    margin-left: 0.7vh;
 }
 #clock.active3 {
     transform: translateX(200%);
