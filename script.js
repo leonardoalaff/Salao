@@ -28,6 +28,9 @@ let rolagemHeader = document.querySelector('.rolagem-header')
 let calcular = document.querySelector('.calcular')
 let calculator = document.querySelector('.calculator')
 let horarioOnibus = document.querySelector('.horario-onibus')
+let onibus = document.querySelector('.onibus')
+let sessao3 = document.querySelector('.sessao3')
+let xOnibus = document.querySelector('.x-onibus')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -47,7 +50,7 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        anuncio.classList.toggle('active')
+        nuncio.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
     if (diaSemana >= 1 && diaSemana <= 5 && hora >= 8 && hora < 18) {
@@ -152,4 +155,11 @@ setInterval(() => {
 horarioOnibus.addEventListener('click', () => {
     ul.classList.remove('active')
     iconeMenu.classList.remove('active')
+    sessao3.classList.add('active')
+    onibus.classList.add('active')
+
+})
+
+xOnibus.addEventListener('click', () => {
+    sessao3.classList.remove('active')
 })

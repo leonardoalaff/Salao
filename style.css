@@ -114,7 +114,7 @@ header {
 .img-header a {text-decoration: none;}
 .p-header {
     position: relative;
-    top: 47px;
+    top: 42px;
     width: 90px;
     font-size: 15px;
     text-align: center;
@@ -122,7 +122,7 @@ header {
     background-color: white;
     color: black;
     border-radius: 20px;
-    padding: 2px 4px;
+    padding: 4px 4px;
 }
 
 .ih1 {background: url('imagens/icones/img-header1.svg');}
@@ -207,7 +207,7 @@ header {
     box-shadow: 7px 7px 10px rgba(4, 32, 24, 0.637);
     z-index: -1;
     transition: 0.5s;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
 }
 .horario.active {top: 165px;}
 
@@ -241,9 +241,9 @@ header {
     background-color: green;
     color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 7px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
     display: none;
     border: 2px solid whitesmoke;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.425);
@@ -256,9 +256,9 @@ header {
     background-color: red;
     color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 7px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
     display: none;
     border: 2px solid whitesmoke;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.425);
@@ -449,7 +449,8 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     z-index: -1;
 }
 #clock {
-    background: url('https://pics.craiyon.com/2023-07-21/506f534858e84b3bbd1d2de3531662dc.webp');
+    background: #FF6600;
+    ;
     background-size: cover;
     text-align: center;
     width: 250px;
@@ -472,7 +473,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
   .destaques2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 5px;
-    background: black;
+    background: #00B24E;
     padding: 10px;
     width: 95%;
     text-align: center;
@@ -576,6 +577,8 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .seta.active{display: flex; z-index: 100;}
 
 #titulo-verduras {
+    background: #00B24E
+    ;
     position: relative;
     left: 10%;
     top: 50px;
@@ -701,12 +704,35 @@ footer a:hover {
 
 
 .sessao3 {
+    display: none;
     overflow-x: hidden;
     height: 500px;
+    transition: 0.3s;
+}
+.sessao3.active {display: block; transition: 0.3s;}
+
+.x-onibus {
+    width: 50px;
+    height: 50px;
+    background: red;
+    color: white;
+    position: absolute;
+    left: 85%;
+    margin-top: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.514);
 }
 
 .onibus {
+    display: none;
     width: 100%;
     height: 500px;
     overflow-x: hidden;
 }
+.onibus.active{display: block;}
