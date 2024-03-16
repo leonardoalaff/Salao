@@ -27,6 +27,7 @@ let abrirMaps = document.querySelector('#abrir-no-maps')
 let rolagemHeader = document.querySelector('.rolagem-header')
 let calcular = document.querySelector('.calcular')
 let calculator = document.querySelector('.calculator')
+let horarioOnibus = document.querySelector('.horario-onibus')
 
 
 iconeMenu.addEventListener('click', () => {
@@ -146,3 +147,9 @@ function showSlide(n) {
 setInterval(() => {
     moveSlide(1); // Avançar para o próximo slide
 }, 5000);
+
+
+horarioOnibus.addEventListener('click', () => {
+    ul.classList.remove('active')
+    iconeMenu.classList.remove('active')
+})

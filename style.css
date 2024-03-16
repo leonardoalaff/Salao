@@ -368,9 +368,9 @@ nav.close {display: none;}
     font-size: 20px;
 }
 
-.home, .contato, .servicos, .calcular{border-radius: 50px 0 0 50px; transition: 0.3s;}
+.home, .contato, .horario-onibus, .calcular{border-radius: 50px 0 0 50px; transition: 0.3s;}
 ul a {text-decoration: none; color: white; transition: 0.5s;}
-.home:hover, .contato:hover, .servicos:hover{
+.home:hover, .contato:hover, .horario-onibus:hover{
     transition: 0.5s;
     transform: translateX(30px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
@@ -699,8 +699,14 @@ footer a:hover {
 }
 
 
+
+.sessao3 {
+    overflow-x: hidden;
+    height: 500px;
+}
+
 .onibus {
     width: 100%;
-    height: 600px;
-    overflow: hidden;
+    height: 500px;
+    overflow-x: hidden;
 }
