@@ -84,7 +84,7 @@ header {
     top: 0;
    position: absolute;
    width: 100%;
-   background: orangered;
+   background: #FF6600;
    height: 400px;
    z-index: 1;
 }
@@ -175,7 +175,7 @@ header {
     left: -100%;
     padding: 10px;
     color: white;
-    background: orangered;
+    background: #FF6600;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -273,7 +273,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     transition: 0.1s;
-    background: orangered;
+    background: #FF6600;
 }
 
 nav.close {display: none;}
@@ -349,7 +349,7 @@ nav.close {display: none;}
     left: -100%;
     top: 0;
     list-style: none;
-    background: orangered;
+    background: #FF6600;
     color: white;
     transition: 0.5s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
@@ -508,7 +508,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     width: 100%;
     height:1200px;
     transition: 0.3s;
-    background: orangered;
+    background: #FF6600;
 }
 
 
