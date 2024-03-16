@@ -15,6 +15,8 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.computador h1 {display: none;}
 body {
 }
 
@@ -92,7 +94,7 @@ header {
 .rolagem-header {
     display: flex;
     position: relative;
-    top: 110px;
+    top: 90px;
     width: 100%;
     height: 70px;
     z-index: -1;
@@ -104,8 +106,8 @@ header {
 .rolagem-header.active{left: -100%;}
 .img-header {
     margin: 0 17px;
-    height: 70px;
-    min-width: 70px;
+    height: 55px;
+    min-width: 55px;
     border: 3px solid white;
     border-radius: 50%;
     background: var(--verde-escuro);
@@ -114,15 +116,15 @@ header {
 .img-header a {text-decoration: none;}
 .p-header {
     position: relative;
-    top: 42px;
-    width: 90px;
-    font-size: 15px;
+    top: 35px;
+    width: 80px;
+    font-size: 13px;
     text-align: center;
     letter-spacing: 1px;
     background-color: white;
     color: black;
     border-radius: 20px;
-    padding: 4px 4px;
+    padding: 3px 0;
 }
 
 .ih1 {background: url('imagens/icones/img-header1.svg');}
@@ -132,46 +134,38 @@ header {
 .ih5 {background-image: url('imagens/icones/img-header5.svg');}
 .ih6 {background-image: url('imagens/icones/img-header6.svg');}
 
-#local{
+
+#local {
     width: 100%;
-    position: relative;
-    top: 120px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 15px;
-    flex-direction: column;
     z-index: -1;
+    position: relative;
 }
-#icone-local.active {}
-#p-local {
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: 0.5s;
-}
-#p-local.active{transform: translateX(-110%); transition: 0.5s;}
 #como-chegar{
     position: relative;
-    top: 10px;
+    top: 200px;
     background: transparent;
     padding: 10px;
     border: 1px solid white;
     color: white;
-    transition: 0.5s;
+    z-index: -1;
 }
 #como-chegar.active{
-    color: black;
-    background: transparent;
-    backdrop-filter: blur(15px);
-    border: 1px solid black;
+    color: white;
+    background: rgb(255, 0, 0);
     font-weight: bold;
+}
+
+#local2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 210px;
 }
 #abrir-no-maps {
     position: relative;
-    top: 30px;
     left: -100%;
     padding: 10px;
     color: white;
@@ -199,7 +193,7 @@ header {
 
 .horario {
     position: relative;
-    top: 120px;
+    top: 190px;
     margin: auto;
     width: 80%;
     height: 130px;
@@ -209,7 +203,7 @@ header {
     transition: 0.5s;
     border-radius: 20px 20px 20px 20px;
 }
-.horario.active {top: 165px;}
+.horario.active {top: 230px;}
 
 .h2-horario {
     text-align: center;
@@ -353,8 +347,6 @@ nav.close {display: none;}
     color: white;
     transition: 0.5s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
-
-    z-index: 2;
 }
 .ul.active {
     left: 0;
@@ -442,29 +434,45 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     width: 100%;
     height: 100px;
     position: relative;
-    top: 445px;
+    top: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    z-index: 1;
 }
 #clock {
     background: #FF6600;
     ;
     background-size: cover;
     text-align: center;
-    width: 250px;
-    padding:10px;
-    font-size: 2em;
+    width: 300px;
+    padding: 5px;
+    font-size: 30px;
     border-radius: 20px;
     color: white;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.74);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.486);
+    transition: 0.2s;
   }
+  #clock.active {
+    transform: translateX(150%);
+    transition: 0.5s;
+  }
+  #clock.active2 {
+    position: relative;
+    transform: translateX(107px);
+    font-size: 15px;
+    width: 130px;
+    transition: 0.5s;
+}
+#clock.active3 {
+    transform: translateX(200%);
+    transition: 0.1s;
+}
 
 
   .destaques {
     position: relative;
-    top: 230px;
+    top: 180px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -521,7 +529,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 
 .slide {
     position: relative;
-    top: 250px;
+    top: 200px;
     width: 95%;
     height: 250px;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.815);
@@ -699,7 +707,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-}
+
 
 
 
@@ -736,3 +744,6 @@ footer a:hover {
     overflow-x: hidden;
 }
 .onibus.active{display: block;}
+
+
+}
