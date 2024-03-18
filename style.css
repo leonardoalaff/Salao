@@ -117,7 +117,7 @@ header {
    width: 100%;
    background: #00B24E;
    height: 400px;
-   z-index: 1;
+   z-index: 0;
 }
 
 .rolagem-header {
@@ -366,7 +366,7 @@ nav.close {display: none;}
 }
 
 .icone-menu.active::after {
-    transform: rotate(45deg) translatex(20px);
+    transform: rotate(45deg) translateX(20px);
 }
 
 .ul {
@@ -475,7 +475,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     z-index: 1;
 }
 #clock {
-    background: #FF6600;;
+    background: #FF6600;
     background-size: cover;
     text-align: center;
     width: 300px;
@@ -527,13 +527,12 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 
 /*********** SESSÃO 1 **********/
 #sessao1 {
-    position: absolute;
+    position: relative;
     width: 100%;
     height:570px;
     margin-top: 250px;
-    background: black;
-    border-radius: 20px;
-    z-index: 1;
+    background: white;
+    border-radius: 20px 20px 0 0;
 }
 
 .icone-wpp {
@@ -631,8 +630,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 .seta.active{display: flex; z-index: 100;}
 
 #titulo-verduras {
-    background: #00B24E
-    ;
+    background: #00B24E;
     position: relative;
     left: 10%;
     top: 50px;
@@ -661,6 +659,9 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
     background-color: white;
+}
+.preco {
+    margin: 10px;
 }
 
 /************************** VERDURAS ****************/
