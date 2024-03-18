@@ -37,17 +37,12 @@ let clock = document.querySelector('#clock')
 iconeMenu.addEventListener('click', () => {
     iconeMenu.classList.toggle('active')
     ul.classList.toggle('active')
-    clock.classList.toggle('active2')
 })
 
 window.addEventListener('scroll', () => {
     nav.classList.toggle('active', scrollY > 0)
     iconeWPP.classList.toggle('active', scrollY > 10)
     seta.classList.toggle('active', scrollY > 450)
-    
-    
-        clock.classList.toggle('active3', scrollY > 60)
-    
 })
 
 window.addEventListener('load', () => {
@@ -56,7 +51,7 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        anuncio.classList.toggle('active')
+        nuncio.classList.toggle('active')
         sair.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
@@ -85,7 +80,6 @@ comoChegar.addEventListener('click', () => {
     rolagemHeader.classList.toggle('active')
     nav.classList.toggle('close')
     horario.classList.toggle('active')
-    clock.classList.toggle('active')
 
     if(comoChegar.classList.contains('active')) {
         comoChegar.innerHTML = 'FECHAR'
@@ -170,10 +164,7 @@ horarioOnibus.addEventListener('click', () => {
     iconeMenu.classList.remove('active')
     sessao3.classList.add('active')
     onibus.classList.add('active')
-
-    if(clock.classList.contains('active2')) {
-        clock.classList.remove('active2')
-    }
+    
 })
 
 xOnibus.addEventListener('click', () => {

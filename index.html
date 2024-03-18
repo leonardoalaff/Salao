@@ -16,6 +16,49 @@
 
 
     <div class="celular">
+
+        <ul class="ul">
+            <a href="#onibus">
+                <li class="horario-onibus">HORÁRIO<br>DE ÔNIBUS</li>
+            </a>
+            <li class="contato">CONTATO</li>
+            <li class="calcular">CALCULAR</li>
+            <div class="calculator"><!-- CALCULADORA-->
+        <input type="text" class="display" id="display" readonly placeholder="Calculadora">
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendToDisplay('+')">+</button>
+    </div>
+
+        </ul>
+
+        <nav class="nav">
+            <!--<img src="" alt="Logo" class="logo">-->
+            <div class="logo">LOGO</div>
+
+            <div class="ds-icon">
+                <a href="https://app.supervalemg.com.br/" target="
+                _blank"><div class="supervale-icon"></div></a>
+            </div>
+
+            <div class="icone-menu"></div>
+            
+        </nav>
+
         <header id="header">
                 <nav class="nav">
                     <!--<img src="" alt="Logo" class="logo">-->
@@ -27,34 +70,7 @@
                     </div>
 
                     <div class="icone-menu"></div>
-                    <ul class="ul">
-                        <a href="#onibus">
-                            <li class="horario-onibus">HORÁRIO<br>DE ÔNIBUS</li>
-                        </a>
-                        <li class="contato">CONTATO</li>
-                        <li class="calcular">CALCULAR</li>
-                        <div class="calculator"><!-- CALCULADORA-->
-                    <input type="text" class="display" id="display" readonly placeholder="Calculadora">
-                    <button onclick="appendToDisplay('7')">7</button>
-                    <button onclick="appendToDisplay('8')">8</button>
-                    <button onclick="appendToDisplay('9')">9</button>
-                    <button onclick="appendToDisplay('/')">/</button>
-                    <button onclick="appendToDisplay('4')">4</button>
-                    <button onclick="appendToDisplay('5')">5</button>
-                    <button onclick="appendToDisplay('6')">6</button>
-                    <button onclick="appendToDisplay('*')">*</button>
-                    <button onclick="appendToDisplay('1')">1</button>
-                    <button onclick="appendToDisplay('2')">2</button>
-                    <button onclick="appendToDisplay('3')">3</button>
-                    <button onclick="appendToDisplay('-')">-</button>
-                    <button onclick="appendToDisplay('0')">0</button>
-                    <button onclick="appendToDisplay('.')">.</button>
-                    <button onclick="clearDisplay()">C</button>
-                    <button onclick="calculate()">=</button>
-                    <button onclick="appendToDisplay('+')">+</button>
-                </div>
-        
-                    </ul>
+                    
                 </nav>
         
                 <div class="rolagem-header">
@@ -96,18 +112,19 @@
                 <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1196.8996136413489!2d-42.082827567832844!3d-19.29798991610586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb042c9b10b2887%3A0xe7b8d7cb6362c81f!2sDom%20Carloto!5e0!3m2!1spt-BR!2sbr!4v1704570790392!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="horario">
-                    <h2 class="h2-horario">FUNCIONAMENTO</h2>
-                    <p class="p-horario">segunda - sexta</p>
-                    <p class="p2-horario">08:00h - 18:00h</p>
-                    <div class="aberto">ABERTO</div>
-                    <div class="fechado">FECHADO</div>
+                 
         </header>
         <main>
             <div class="bg-clock">
                 <div id="clock"></div><!-- RELÓGIO-->
             </div>
             <section id="sessao1">
+                <div class="horario">
+                    <div class="aberto">ABERTO</div>
+                    <div class="fechado">FECHADO</div>
+                    <p id="abertura">Segunda - sexta, 08:00 - 18:00</p>
+                </div>   
+                
                 <div id="sair">✖</div>
                 <div id="anuncio">
                     
@@ -124,8 +141,6 @@
                     <a href="http://aprenda.estacio.br/selecao?cod_agente=14369444&u=356738&end=1" target="_blank" class="slide slide1 fade"><div></div></a>
 
                     <a href="http://aprenda.estacio.br/selecao?cod_agente=14369444&u=356738&end=1" target="_blank" class="slide slide2 fade"><div></div></a>
-
-                    <a href="" class="slide slide3 fade"><div></div></a>
                 </div>
                 
 
@@ -203,6 +218,7 @@
 
                         <div class="bloco-verduras box-frutas fru9"><h3 class="preco">$9,90</h3></div>
                     </div>
+                    
                     <h1 id="titulo-verduras">Bebidas</h1>
                     <div class="rolagem-verduras" id="bebidas">
                         <div class="bloco-verduras box-bebidas beb1"><h3 class="preco">$9,90</h3></div>
@@ -235,4 +251,10 @@
         <footer>
             <p>Desenvolvido por <a href="https://github.com/leonardoalaff" target="_blank">Leonardo Alaff</a></p>
         </footer>
-        <script
+
+
+
+        <script src="script.js"></script>
+
+    </body>
+</html>        

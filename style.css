@@ -116,7 +116,7 @@ header {
    position: absolute;
    width: 100%;
    background: #00B24E;
-   height: 400px;
+   height: 300px;
    z-index: 0;
 }
 
@@ -223,15 +223,13 @@ header {
 
 .horario {
     position: relative;
-    top: 190px;
+    top: 50px;
     margin: auto;
-    width: 80%;
-    height: 130px;
-    background: whitesmoke;
-    box-shadow: 7px 7px 10px rgba(4, 32, 24, 0.637);
-    z-index: -1;
+    width: 100%;
     transition: 0.5s;
-    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .horario.active {top: 230px;}
 
@@ -260,34 +258,64 @@ header {
     font-weight: bold;
 }
 .aberto {
+    height: 50px;
+    width: 80px;
     text-align: center;
-    padding: 10px 0;
     background-color: green;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 13px;
     letter-spacing: 7px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
     display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
     border: 2px solid whitesmoke;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.425);
+    animation: mover 3s ease-in-out infinite;
 }
-.aberto.active {display: block;}
+.aberto.active {display: flex;}
 
 .fechado {
+    position: relative;
+    top: 7px;
+    height: 50px;
+    width: 80px;
     text-align: center;
-    padding: 10px 0;
     background-color: red;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 7px;
-    border-radius: 0 0 20px 20px;
+    font-size: 13px;
+    border-radius: 20px;
     display: none;
-    border: 2px solid whitesmoke;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.425);
+    animation: mover 3s ease-in-out infinite;
+}
+.fechado.active {display: flex;}
+
+@keyframes mover {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#abertura {
+    background: #00B24E;
+    color: white;
+    height: 50px;
+    width: 245px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.425);
 }
-.fechado.active {display: block;}
 
 nav {
     width: 100%;
@@ -298,6 +326,7 @@ nav {
     align-items: center;
     transition: 0.1s;
     background: #00B24E;
+    z-index: 900;
 }
 
 nav.close {display: none;}
@@ -377,10 +406,11 @@ nav.close {display: none;}
     left: -100%;
     top: 0;
     list-style: none;
-    background: #FF6600;
+    background: #00B24E;
     color: white;
     transition: 0.5s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
+    z-index: 1000;
 }
 .ul.active {
     left: 0;
@@ -468,14 +498,13 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     width: 100%;
     height: 100px;
     position: relative;
-    top: 160px;
+    top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
 }
 #clock {
-    background: #FF6600;
     background-size: cover;
     text-align: center;
     width: 300px;
@@ -483,31 +512,13 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
     font-size: 30px;
     border-radius: 20px;
     color: white;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.486);
     transition: 0.2s;
   }
-  #clock.active {
-    transform: translateX(150%);
-    transition: 0.5s;
-  }
-  #clock.active2 {
-    position: relative;
-    transform: translateX(83%);
-    font-size: 15px;
-    width: 130px;
-    transition: 0.5s;
-    margin-left: 1vh;
-    margin-right: 1vh;
-}
-#clock.active3 {
-    transform: translateX(200%);
-    transition: 0.1s;
-}
 
 
   .destaques {
     position: relative;
-    top: 180px;
+    top: 120px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -528,11 +539,12 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 /*********** SESSÃO 1 **********/
 #sessao1 {
     position: relative;
+    top: 150px;
     width: 100%;
     height:570px;
-    margin-top: 250px;
     background: white;
     border-radius: 20px 20px 0 0;
+    z-index: 1;
 }
 
 .icone-wpp {
@@ -552,8 +564,9 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 /*********** SESSÃO 2 **********/
 #sessao2 {
     position: relative;
+    top: 130px;
     width: 100%;
-    height:1200px;
+    height:1330px;
     transition: 0.3s;
     background: white;
 }
@@ -567,7 +580,7 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 
 .slide {
     position: relative;
-    top: 200px;
+    top: 140px;
     width: 95%;
     height: 300px;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.815);
@@ -583,12 +596,6 @@ ul a {text-decoration: none; color: white; transition: 0.5s;}
 }
 .slide2 {
     background: url('imagens/banners/melhor-ead.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-.slide3 {
-    background: url('https://play-lh.googleusercontent.com/nx-lDk3WbSncMhb2RKTM3OmmVmLsBNKY5D6zwWO7ZnbaOm1EU7kvH_ifvve4IlRuLg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
