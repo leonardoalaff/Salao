@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
     const hora = agora.getHours();
 
     setTimeout(() => {
-        nuncio.classList.toggle('active')
+        anuncio.classList.toggle('active')
         sair.classList.toggle('active')
     }, 1000); // 1000 milissegundos = 1 segundo
 
